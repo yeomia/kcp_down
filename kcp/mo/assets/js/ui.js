@@ -22,6 +22,13 @@ $(window).scroll(function (e) {
     } else {
       $('.fixed_menu').removeClass('hide').addClass('show')
     }
+    if ($('.btn_sticky').length > 0) {
+      if (st > lastSt) {
+        $('.btn_sticky').removeClass('up')
+      } else {
+        $('.btn_sticky').addClass('up')
+      }
+    }
   }
   lastSt = st;
 });
@@ -100,7 +107,5 @@ var filterClose = function () {
 var changePw = $('.member .btn_confirm');
 var pwBox = $('.member .pw');
 changePw.on('click', function () {
-  if (!pwBox.hasClass('active')) {
-    pwBox.addClass('active');
-  }
+  pwBox.slideDown();
 });
