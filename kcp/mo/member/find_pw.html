@@ -11,10 +11,10 @@
 
 <meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
 <title>유한킴벌리 프로페셔널</title>
-<!-- <link rel="icon" href="/kcp/mo/assets/images/common/favicon.ico" type="image/x-icon"> -->
-<link rel="stylesheet" href="/kcp/mo/assets/css/ui.css" />
-<script type="text/javascript" src="/kcp/mo/assets/js/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="/kcp/mo/assets/js/ui-plugin.js"></script>
+<!-- <link rel="icon" href="../assets/images/common/favicon.ico" type="image/x-icon"> -->
+<link rel="stylesheet" href="../assets/css/ui.css" />
+<script type="text/javascript" src="../assets/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/ui-plugin.js"></script>
 
 </head>
 <body>
@@ -26,7 +26,10 @@
 		<h1 class="logo"><a href="#"><span class="a11y">유한킴벌리 프로페셔널</span></a></h1>
 		<div class="head">
 			<a href="#" class="btn btn_back"><span class="a11y">preview page</span></a>
-			<h2>건강과 안전</h2>
+			
+				<h2>비밀번호 찾기</h2>
+			
+			 
 		</div>
 	</div>
 </header>
@@ -35,63 +38,114 @@
 
 <div class="wrap">
 	<!-- container -->
-	<div class="container">
+	<div class="container member">
 		<div class="page_summary">
-			회사생활과 삶을 위한 자료와 정보를 혁신으로 유한킴벌리가 이끌어 갑니다.
+			유한킴벌리 프로페셔널에 등록된 파트너사 휴대폰 번호를 통해 비밀번호 찾기가 가능합니다.
 		</div>
 		
-		<div class="borad_wrap">
-			<!-- sort -->
-			<div class="sort">
-				<select class="dropdown">
-					<option>최신순</option>
-					<option>가나다순</option>
-					<option>가나다 역순</option>
-				</select>
-			</div>
-			<!--// sort -->
-			
-			<!-- board_list -->
-			<div class="board_list type2">
-				<ul>
-					<li class="item">
-						<a href="#">
-							<p class="img"><img src="/kcp/mo/assets/images/dummy/@thunm01.png" alt=""></p>
-							<div class="info">
-								<p class="title">코로나 바이러스로부터 안전한 수칙7 가지</p>
-								<p class="date">2020.07.09</p>
-							</div>
-						</a>
-					</li>
-					<li class="item">
-						<a href="#">
-							<p class="img"><img src="/kcp/mo/assets/images/dummy/@thunm02.png" alt=""></p>
-							<div class="info">
-								<p class="title">건강한 일터 만들기를 위한 유한킴벌리의 노력!</p>
-								<p class="date">2020.07.09</p>
-							</div>
-						</a>
-					</li>
-					<li class="item">
-						<a href="#">
-							<p class="img"><img src="/kcp/mo/assets/images/dummy/@thunm03.png" alt=""></p>
-							<div class="info">
-								<p class="title">건강한 일터 만들기를 위한 유한킴벌리의 노력!</p>
-								<p class="date">2020.07.09</p>
-							</div>
-						</a>
-					</li>
-				</ul>
+		<div class="row">
+			<!-- form group -->
+			<dl class="frm_group">
+				<dt><label for="frm1">아이디</label></dt>
+				<dd><input type="text" id="frm1" placeholder="아이디를 입력해주세요"></dd>
+				<dt><label for="frm2">휴대폰 번호</label></dt>
+				<dd class="inpwrap">
+					<input type="tel" id="frm2" placeholder="- 를 제외한 숫자만 입력해주세요">
+					<p class="inp_txt">해당 주/부계정에 등록된 휴대폰 번호를 입력하셔야 인증번호가 발송됩니다.</p>
+				</dd>
+			</dl>
+			<!--// form group -->
 
-				<div class="more_view">
-					<a href="#">더보기 (10/106) <i></i></a>
+			<div class="btn_wrap">
+				<button class="btn default">인증번호 전송</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<dl class="frm_group">
+				<dt><label for="frm3">인증번호</label></dt>
+				<dd class="certify">
+					<div class="inpwrap">
+						<input type="tel" id="frm3" placeholder="인증번호를 입력해주세요">
+						<span class="cnt">00:00</span>
+					</div>
+					<button class="btn default btn_confirm">확인</button>
+				</dd>
+			</dl>
+		</div>
+
+		<!-- 휴대폰 인증 후 노출되는 영역 -->
+		<div class="row pw">
+			<dl class="frm_group">
+				<dt><label for="frm4">새 비밀번호입력</label></dt>
+				<dd class="inpwrap">
+					<input type="password" id="frm4" placeholder="영문+숫자 조합 6~12자리">
+					<p class="inp_txt warn">띄어쓰기 없는 영문, 숫자 6~12자로 입력해 주세요</p> <!-- 입력 형식이 맞지 않을 경우 노출 -->
+				</dd>
+
+				<dt><label for="frm5">새 비밀번호확인</label></dt>
+				<dd class="inpwrap">
+					<input type="password" id="frm5" placeholder="영문+숫자 조합 6~12자리">
+					<p class="inp_txt warn">비밀번호가 일치하지 않습니다.</p> <!-- 비밀번호가 맞지 않을 경우 노출 -->
+				</dd>
+			</dl>
+
+			<div class="btn_wrap">
+				<button class="btn primary">비밀번호 변경</button>
+			</div>
+		</div>
+		<!--// 휴대폰 인증 후 노출되는 영역 -->
+
+		<!-- layer popup -->
+		<!-- 주/부계정에 등록된 휴대폰 번호가 일치할 경우 -->
+		<div class="layer_body popup" id="popup1" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>인증번호를 발송했습니다.<br>확인 후 인증번호를 입력해주세요.</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('popup1')" class="btn btn_confirm">확인</button>
 				</div>
 			</div>
-			<!--// board_list -->
+		</div>
+
+		<!-- 주/부계정에 등록된 휴대폰 번호가 불일치할 경우 -->
+		<div class="layer_body popup" id="popup2" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>휴대폰 번호가 일치하지 않습니다.<br>확인 후 다시 시도해주세요.</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('popup2')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- 인증번호가 일치하지 않을 경우 -->
+		<div class="layer_body popup" id="popup3" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>인증 번호가 일치하지 않습니다.<br>확인 후 다시 시도해주세요.</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('popup3')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- 비밀번호 변경 버튼 클릭 시 -->
+		<div class="layer_body popup" id="popup4" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>비밀번호가 정상적으로 변경되었습니다.<br>확인을 누르시면 로그인 페이지로 이동합니다.</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('popup4')" class="btn btn_confirm">확인</button>
+				</div>
+			</div>
 		</div>
 
 	</div>
-
 	<!--// container -->
 </div>
 <!--// wrap -->
@@ -188,7 +242,7 @@
 		<p>©2013 Kimberly-Clark Worldwide Inc.<br>All Right Reserved.</p>
 	</div>
 </footer>
-<script src="/kcp/mo/assets/js/ui.js"></script>
+<script type="text/javascript" src="../assets/js/ui.js"></script>
 
 <!-- //footer -->
 
