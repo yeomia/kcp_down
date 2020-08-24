@@ -28,6 +28,7 @@
 			<a href="#" class="btn btn_back"><span class="a11y">preview page</span></a>
 			
 			 
+			 
 		</div>
 	</div>
 </header>
@@ -64,10 +65,19 @@
 	<div>
 	<h2>Button</h2>
 	<div class="btn_wrap">
+		<button class="btn primary">Primary</button>
+	</div>
+	<div class="btn_wrap">
 		<button class="btn default">Default</button>
 	</div>
 	<div class="btn_wrap">
-		<button class="btn primary">Primary</button>
+		<button class="btn secondary">Secondary</button>
+	</div>
+	<div class="btn_wrap">
+		<button class="btn cancel">Cancel</button>
+	</div>
+	<div class="btn_wrap">
+		<button class="btn_line">Line</button>
 	</div>
 	<a href="#" class="btn_link">link button</a>
 	</div>
@@ -78,9 +88,10 @@
 	<div class="inpwrap">
 		<input type="password" placeholder="비밀번호를 입력해주세요">
 	</div>
+
 	<dl class="frm_group">
-		<dt><label for="frm1">아이디</label></dt>
-		<dd><input type="text" id="frm1" placeholder="아이디를 입력해주세요"></dd>
+		<dt><label for="frm1">아이디 <span class="required"><span class="a11y">필수</span></span></label></dt>
+		<dd><input type="text" id="frm1" placeholder="아이디를 입력해주세요" required></dd>
 
 		<dt><label for="frm2">새 비밀번호입력</label></dt>
 		<dd class="inpwrap">
@@ -96,7 +107,28 @@
 			</div>
 			<button class="btn default btn_confirm">확인</button>
 		</dd>
+		
+		<dt><label for="frm3">전화번호</label></dt>
+		<dd class="mix">
+			<select>
+				<option>02</option>
+				<option>02</option>
+			</select>
+			<input type="text" id="frm8">
+		</dd>
 	</dl>
+
+	<div class="frm_half">
+		<dl class="frm_group">
+			<dt><label for="frm3">담당자</label></dt>
+			<dd><input type="text" id="frm3" placeholder="담당자명 입력"></dd>
+		</dl>
+		<dl class="frm_group">
+			<dt><label for="frm4">부서</label></dt>
+			<dd><input type="text" id="frm4" placeholder="부서입력"></dd>
+		</dl>
+	</div>
+
 	<h3>checkbox</h3>
 	<p class="chkwrap"><input type="checkbox" id="ck01"><label for="ck01">평판형<span>(111)</span></label></p>
 	<p class="chkwrap"><input type="checkbox" id="ck02"><label for="ck02">롤타입<span>(20)</span></label></p>
@@ -104,8 +136,8 @@
 	</div>
 <br>
 	<div>
-	<h3>기본이미지 : <br><strong style="font-size:12px;">./assets/images/common/default_image.png</strong></h3>
-	<p style="width:200px;height:200px;"><img src="./assets/images/common/default_image.png" alt=""></p>
+	<h3>기본이미지 : <br><strong style="font-size:12px;">../assets/images/common/default_image.png</strong></h3>
+	<p style="width:200px;height:200px;"><img src="../assets/images/common/default_image.png" alt=""></p>
 	</div>
 <br>
 	<div>
@@ -122,22 +154,71 @@
 			</div>
 		</div>
 
-		<!-- <div class="layer_body popup" id="popup2" aria-hidden="true" role="dialog">
+		<div class="layer_body popup" id="popup2" aria-hidden="true" role="dialog">
 			<div class="layer_wrap">
 				<div class="layer_head">
-					<button onclick="layerClose('popup2')" class="layer_close manualfn">닫기</button>
+					<!-- <button onclick="layerClose('popup2')" class="layer_close manualfn">닫기</button> -->
 					<h2 class="layer_title">layer_title</h2>
 				</div>
 				<div class="layer_cont">
+					layer contents
 				</div>
 			</div>
-		</div> -->
+		</div>
+
+		<div class="layer_body layer_full" id="popup3" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_head">
+					<button onclick="layerClose('popup3')" class="layer_close manualfn">닫기</button>
+					<h2 class="layer_title">대여용품 선택</h2>
+				</div>
+				<div class="layer_cont">
+					layer contents
+				</div>
+			</div>
+		</div>
 
 		<button onclick="layerOpen('popup1')">레이어 열기(타이틀 없는 팝업)</button>
 		<br>
-		<!-- <button onclick="layerOpen('popup2')">레이어 열기(타이틀 있는 팝업)</button> -->
-		
+		<button onclick="layerOpen('popup2')">레이어 열기(타이틀 있는 팝업)</button>
+		<br>
+		<button onclick="layerOpen('popup3')">레이어 열기(Full 팝업)</button>
+	</div>
 
+	<br>
+	<div>
+		<h3>달력(datepicker)</h3>
+		<input type="text" id="" class="datepicker" value="" placeholder="달력(datepicker)" readonly="" />
+	</div>
+
+	<div>
+		<h3>테이블</h3>
+		<h4>type list</h4>
+		<div class="tbl_list">
+			<table>
+				<colgroup>
+					<col>
+					<col style="width:25%;">
+					<col style="width:25%;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>[제품코드]제품명</th>
+						<th>박스당입수</th>
+						<th>신청단위</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="left">
+							<p class="chkwrap"><input type="checkbox" id="ck01"><label for="ck01">[57157] 크리넥스 셀 방향제 전용용기</label></p>
+						</td>
+						<td>5EA</td>
+						<td>CS</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</div>
 
 </div>
@@ -162,9 +243,9 @@
 			<div class="recom_tag">
 				<p>추천 검색어</p>
 				<ul>
-					<li><a href="#"><p class="num">1</p><p>크리넥스<span>드라이셀 R170</span></p></a></li>
+					<li><a href="#"><p class="num">1</p><p>추천검색어입니다</p></a></li>
 					<li><a href="#"><p class="num">2</p><p>스카트<span>스카트폴드 타올</span></p></a></li>
-					<li><a href="#"><p class="num">3</p><p>크리넥스<span>미용티슈</span></p></a></li>
+					<li><a href="#"><p class="num">3</p><p>추천검색어입니다 얼마만큼 넣어야하나요</p></a></li>
 					<li><a href="#"><p class="num">4</p><p>크리넥스<span>미용티슈</span></p></a></li>
 					<li><a href="#"><p class="num">5</p><p>크리넥스<span>미용티슈</span></p></a></li>
 					<li><a href="#"><p class="num">6</p><p>크리넥스<span>미용티슈</span></p></a></li>
