@@ -1069,7 +1069,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .tab_navi > ul li { width: 22.22%; -ms-flex-negative: 0; flex-shrink: 0; -webkit-transition-property: -webkit-transform; transition-property: -webkit-transform; transition-property: transform; transition-property: transform, -webkit-transform; text-align: center; }
 
-.tab_navi > ul li.active a { color: #0053a7; font-weight: 500; border-color: #0053a7; }
+.tab_navi > ul li.active a { color: #0053a7; font-size: 14px; font-weight: 500; border-color: #0053a7; }
 
 .tab_navi > ul a { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; width: 100%; height: 100%; padding: 15px 11px 10px; line-height: 1.4; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; border-bottom: 3px solid transparent; }
 
@@ -1413,13 +1413,17 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .layer_body.rentpopup .layer_cont .desc p { color: #666666; font-size: 12px; font-weight: 300; }
 
-.layer_body.rentpopup .tab_navi { width: 100%; overflow: hidden; overflow-x: scroll; }
+.layer_body.rentpopup .tab_navi { width: 100%; padding-bottom: 10px; overflow: hidden; overflow-x: auto; }
 
 .layer_body.rentpopup .tab_navi > ul { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-.layer_body.rentpopup .tab_navi > ul li { float: left; -ms-flex-negative: 0; flex-shrink: 0; -webkit-transition-property: -webkit-transform; transition-property: -webkit-transform; transition-property: transform; transition-property: transform, -webkit-transform; }
+.layer_body.rentpopup .tab_navi > ul li { -ms-flex-negative: 0; flex-shrink: 0; -webkit-transition-property: -webkit-transform; transition-property: -webkit-transform; transition-property: transform; transition-property: transform, -webkit-transform; }
 
-.layer_body.rentpopup .tab_navi > ul li a { padding: 0 20px; }
+.layer_body.rentpopup .tab_navi > ul li.active a { color: #0053a7; font-weight: 500; border-color: #0053a7; }
+
+.layer_body.rentpopup .tab_navi > ul a { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; width: 100%; height: 100%; padding: 15px 11px 10px; line-height: 1.4; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; border-bottom: 3px solid transparent; }
+
+.layer_body.rentpopup .tab_navi + .tbl_list { margin-top: -10px; }
 
 .layer_body.stockpopup .layer_cont { padding-bottom: 5px; }
 
@@ -1529,6 +1533,8 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 .partner .order_list .desc span { display: block; padding-left: 24px; color: #999; }
 
 .partner .order_list .item { background-color: #fff; }
+
+.partner .order_list.type2 > .desc { padding-top: 10px; }
 
 .partner .reason .frm_group { margin-bottom: 30px; }
 
