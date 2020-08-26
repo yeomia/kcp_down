@@ -16,7 +16,6 @@
 <script type="text/javascript" src="../assets/js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="../assets/js/ui-plugin.js"></script>
 
-	<link rel="stylesheet" href="../assets/css/main.css" />
 </head>
 <body>
 <div class="skipnavigation"><a href="#container">본문 바로가기</a></div>
@@ -28,7 +27,7 @@
 		<div class="head">
 			<a href="#" class="btn btn_back"><span class="a11y">preview page</span></a>
 			
-				<h2>검색결과</h2>
+				<h2>전용용기 대여신청</h2>
 			
 			 
 			 
@@ -40,148 +39,42 @@
 
 <div class="wrap">
 	<!-- container -->
-	<div class="container search_cont">
-		<!-- search_frm-input -->
-		<div class="search_frm-input">
-			<div>
-				<button class="btn btn_search" onclick="location.href='/kcp/mo/html/professional/search.html'"><span class="a11y">search</span></button>
-				<input type="text" value="" placeholder="제품명을 입력하세요.">
+	<div class="container order">
+		<div class="rent_write">
+			<div class="row intro">
+				<p>전용용기 대여신청 전에 아래<br><span>[HC 발주용]</span> 또는<br><span>[무상대여용]</span>을 선택 후<br>신청하시기 바랍니다.</p>
 
-				<a href="#" class="btn btn_reset"><span class="a11y">reset</span></a>
-			</div>
-
-			<p class="txt">총 <span>125개</span> 제품이 검색되었습니다.</p>
-		</div>
-		<!--// search_frm-input -->
-
-		<!-- search_result -->
-		<div class="search_result">
-			<div class="row">
-				<!-- sort -->
-				<div class="sort">
-					<a href="#" onclick="filterShow();return false;" class="btn btn_filter">필터</a>
-
-					<select class="dropdown">
-						<option>전체</option>
-						<option>최신순</option>
-						<option>가나다순</option>
-						<option>가나다 역순</option>
-					</select>
+				<div class="btn_wrap">
+					<button onclick="rentTypesel(this)" data-type="type1" class="btn btn_rent active"><i></i>HC 발주용</button>
+					<button onclick="rentTypesel(this)" data-type="type2" class="btn btn_rent"><i></i>무상 대여용</button>
 				</div>
-				<!--// sort -->
-
-				<!-- product_list -->
-				<div class="product_list">
-					<ul class="col_2">
-						<li>
-							<a href="#">
-								<div class="img"><img src="../assets/images/dummy/@product290_01.jpg" alt=""></div>
-								<div class="info">
-									<p class="pname">[뽀삐] 슈퍼 점보롤 화장지 600m</p>
-									<ul class="desc">
-										<li><span class="code">코드: 45386</span></li>
-										<li>98mmx300m</li>
-									</ul>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div class="img"><img src="../assets/images/dummy/@product290_02.jpg" alt=""></div>
-								<div class="info">
-									<p class="pname">[크리넥스] 에어셀 두루마리 화장지 50m 에어셀 두루마리 화장지 50m</p>
-									<ul class="desc">
-										<li><span class="code">코드: 45386</span></li>
-										<li>262mm(H) X 236mm(W) X 166mm(D)</li>
-									</ul>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div class="img"><img src="../assets/images/common/default_image.png" alt=""></div>
-								<div class="info">
-									<p class="pname">[뽀삐] 슈퍼 점보롤 화장지 600m</p>
-									<ul class="desc">
-										<li><span class="code">코드: 45386</span></li>
-										<li>98mmx300m</li>
-									</ul>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div class="img"><img src="../assets/images/dummy/@product290_01.jpg" alt=""></div>
-								<div class="info">
-									<p class="pname">[뽀삐] 슈퍼 점보롤 화장지 600m</p>
-									<ul class="desc">
-										<li><span class="code">코드: 45386</span></li>
-										<li>98mmx300m</li>
-									</ul>
-								</div>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<div class="img"><img src="../assets/images/dummy/@product290_02.jpg" alt=""></div>
-								<div class="info">
-									<p class="pname">[뽀삐] 슈퍼 점보롤 화장지 600m</p>
-									<ul class="desc">
-										<li><span class="code">코드: 45386</span></li>
-										<li>98mmx300m</li>
-									</ul>
-								</div>
-							</a>
-						</li>
-					</ul>
-
-					<div class="more_view">
-						<a href="#">더보기 (10/106) <i></i></a>
-					</div>
-					
+				<div class="rent_type type1 active">
+					<p><span>WMA발주</span> 이전에 약정서가 작성되어야 하며, 약정서작성 없이 발주 시 발주삭제 처리됩니다.</p>
 				</div>
-				<!--// product_list -->
-
-			</div>
-		</div>
-		<!--// search_result -->
-
-		<div class="filter_layer">
-			<div class="dim"></div>
-			<div class="filter_wrap">
-				<div class="layer_head">
-					필터
-					<a href="#" onclick="filterClose();return false;" class="btn btn_close"><span class="a11y">close</span></a>
-				</div>
-
-				<div class="layer_cont">
-					<div class="accord_wrap _filter" id="filters" role="filter">
-						<div class="item" data-status="expanded">
-							<div class="acco_head">
-								<a href="#" class="acco_target" tabindex="0">카테고리 <i></i></a>
-							</div>
-							<div class="acco_panel">
-								<p class="chkwrap"><input type="checkbox" id="ck01"><label for="ck01">평판형<span>(111)</span></label></p>
-								<p class="chkwrap"><input type="checkbox" id="ck02"><label for="ck02">롤타입<span>(20)</span></label></p>
-								<p class="chkwrap"><input type="checkbox" id="ck03"><label for="ck03">프리미엄<span>(4)</span></label></p>
-							</div>
-						</div>
-						<div class="item" data-status="hidden">
-							<div class="acco_head">
-								<a href="#" class="acco_target" tabindex="0">브랜드 <i></i></a>
-							</div>
-							<div class="acco_panel">
-								<p class="chkwrap"><input type="checkbox" id="ck01_1"><label for="ck01_1">크리넥스<span>(9999)</span></label></p>
-								<p class="chkwrap"><input type="checkbox" id="ck01_2"><label for="ck01_2">크리넥스<span>(9999)</span></label></p>
-								<p class="chkwrap"><input type="checkbox" id="ck01_3"><label for="ck01_3">뽀삐 <span>(4)</span></label></p>
-								<p class="chkwrap"><input type="checkbox" id="ck01_4"><label for="ck01_4">크린가드 <span>(2)</span></label></p>
-							</div>
-						</div>
-					</div>
-
+				<div class="rent_type type2">
+					<p><span>무상대여</span>가 가능한지 등은 담당 영업대표와 사전 논의되어야 합니다.</p>
 				</div>
 			</div>
 		</div>
+
+		<!-- sticky button -->
+		<div class="btn_sticky up">
+			<a href="#" onclick="layerOpen('popup1');return false;" class="btn primary">동의 및 대여신청하기</a>
+		</div>
+
+		<!-- 설치피드백 체크 팝업 -->
+		<div class="layer_body popup" id="popup1" aria-hidden="true" role="dialog">
+			<div class="layer_wrap">
+				<div class="layer_cont alert">
+					<p>전용용기 대여신청 대비 설치 피드백이 <strong>80%이상</strong> 되어야 신청하실 수 있습니다.<br>설치피드백을 작성하시겠습니까?</p>
+				</div>
+				<div class="btn_wrap">
+					<button onclick="layerClose('popup1')" class="btn btn_cancel">취소</button>
+					<button class="btn btn_confirm">확인</button>
+				</div>
+			</div>
+		</div>
+		<!--// 설치피드백 체크 팝업 -->
 
 	</div>
 	<!--// container -->
