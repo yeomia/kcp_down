@@ -79,9 +79,10 @@ function datepickerControl() {
 		dayNamesShort: ['일','월','화','수','목','금','토'],
 		dayNamesMin: ['일','월','화','수','목','금','토'],
 		showMonthAfterYear: true,
-		dateFormat: "yy-mm-dd",
-		minDate: "-5y",
-		maxDate: "now",
+		// dateFormat: "yy-mm-dd",
+		dateFormat: "yy.mm.dd",
+		// minDate: "-5y",
+		// maxDate: "now",
 		showOtherMonths: true,
   	selectOtherMonths: true,
 	}

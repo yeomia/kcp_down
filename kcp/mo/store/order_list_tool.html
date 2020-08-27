@@ -27,7 +27,7 @@
 		<div class="head">
 			<a href="#" class="btn btn_back"><span class="a11y">preview page</span></a>
 			
-				<h2>전용용기 대여신청</h2>
+				<h2>신청현황</h2>
 			
 			 
 			 
@@ -40,42 +40,84 @@
 
 <div class="wrap">
 	<!-- container -->
-	<div class="container order">
-		<div class="rent_write">
-			<div class="row intro">
-				<p>전용용기 대여신청 전에 아래<br><span>[HC 발주용]</span> 또는<br><span>[무상대여용]</span>을 선택 후<br>신청하시기 바랍니다.</p>
+	<div class="container partner">
+		<!-- tab navi -->
+		<div class="tab_navi">
+			<ul>
+				<li><a href="#">전용용기</a></li>
+				<li><a href="#">무료사용</a></li>
+				<li><a href="#">전용용기 파손/손실</a></li>
+				<li class="active"><a href="#">영업도구</a></li> <!-- 활성화 .active -->
+				<li><a href="#">전용용기 재고현황</a></li>
+			</ul>
+		</div>
 
-				<div class="btn_wrap">
-					<button onclick="rentTypesel(this)" data-type="type1" class="btn btn_rent active"><i></i>HC 발주용</button>
-					<button onclick="rentTypesel(this)" data-type="type2" class="btn btn_rent"><i></i>무상 대여용</button>
+		<!-- order list -->
+		<div class="row order_list type2">
+			<p class="desc">영업도구를 받지 못하셨거나 배송이 일주일 이상 지체된 경우 이메일 <em>xxxxx@xxxxx.co.kr</em>로 문의바랍니다. <span>(신청일, 주문번호 기재 필수)</span></p>
+			
+			<!-- loop -->
+			<div class="item">
+				<!-- status type 
+					type2: 승인완료, 배송지시완료
+				-->
+				<div class="info">
+					<span class="num">123456789123</span>
+					<span class="date">2020.07.12</span>
 				</div>
-				<div class="rent_type type1 active">
-					<p><span>WMA발주</span> 이전에 약정서가 작성되어야 하며, 약정서작성 없이 발주 시 발주삭제 처리됩니다.</p>
-				</div>
-				<div class="rent_type type2">
-					<p><span>무상대여</span>가 가능한지 등은 담당 영업대표와 사전 논의되어야 합니다.</p>
+
+				<div class="summary">
+					<span class="status type2">승인완료</span>
+					<span class="qty">10개</span>
+
+					<p class="name">화장실 쓰레기통 치우기 캠페인 스티커(남자화장실용, 행정안전부)</p>
+
+					<div class="prd">
+						<div class="thumb">
+							<img src="../assets/images/dummy/@product_01.png" alt="">
+						</div>
+						<dl>
+							<dt>종류</dt>
+							<dd>라벨(스티커)</dd>
+							<dt>제품 카테고리</dt>
+							<dd>기타 위생케어, 핸드타올, 화장실용 화장지</dd>
+						</dl>
+					</div>
 				</div>
 			</div>
-		</div>
+			<!--// loop -->
 
-		<!-- sticky button -->
-		<div class="btn_sticky up">
-			<a href="#" onclick="layerOpen('popup1');return false;" class="btn primary">동의 및 대여신청하기</a>
-		</div>
-
-		<!-- 설치피드백 체크 팝업 -->
-		<div class="layer_body popup" id="popup1" aria-hidden="true" role="dialog">
-			<div class="layer_wrap">
-				<div class="layer_cont alert">
-					<p>전용용기 대여신청 대비 설치 피드백이 <strong>80%이상</strong> 되어야 신청하실 수 있습니다.<br>설치피드백을 작성하시겠습니까?</p>
+			<div class="item">
+				<div class="info">
+					<span class="num">123456789123</span>
+					<span class="date">2020.07.12</span>
 				</div>
-				<div class="btn_wrap">
-					<button onclick="layerClose('popup1')" class="btn btn_cancel">취소</button>
-					<button class="btn btn_confirm">확인</button>
+
+				<div class="summary">
+					<span class="status type2">배송지시완료</span>
+					<span class="qty">10개</span>
+
+					<p class="name">화장실 쓰레기통 치우기 캠페인 스티커(남자화장실용, 행정안전부)</p>
+
+					<div class="prd">
+						<div class="thumb">
+							<img src="../assets/images/dummy/@product_01.png" alt="">
+						</div>
+						<dl>
+							<dt>종류</dt>
+							<dd>라벨(스티커)</dd>
+							<dt>제품 카테고리</dt>
+							<dd>기타 위생케어, 핸드타올</dd>
+						</dl>
+					</div>
 				</div>
 			</div>
+
+			<!-- more -->
+			<div class="more_view">
+				<a href="#">더보기 (10/106) <i></i></a>
+			</div>
 		</div>
-		<!--// 설치피드백 체크 팝업 -->
 
 	</div>
 	<!--// container -->
