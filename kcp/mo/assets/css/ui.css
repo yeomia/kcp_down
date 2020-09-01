@@ -320,6 +320,12 @@ h1.logo { display: block; width: 81px; height: 30px; margin: 0 auto; background-
 
 .footer { margin-top: 70px; background-color: #222222; }
 
+.footer .social { padding: 17px 30px 15px; background-color: #fae100; }
+
+.footer .social a { display: inline-block; padding-left: 40px; line-height: 1.5; font-size: 12px; background-image: url(../images/common/kakao_logo.png); background-size: 34px; background-repeat: no-repeat; background-position: 0 center; }
+
+.footer .social a span { line-height: 1.5; font-size: 12px; font-weight: 450; }
+
 .footer .row { position: relative; padding: 42px 55px 20px; }
 
 .footer .row * { color: #eeeeee; }
@@ -382,9 +388,11 @@ h1.logo { display: block; width: 81px; height: 30px; margin: 0 auto; background-
 
 .footer .copyr .btm .sns a.btn-yt > i { background-image: url(../images/icon/fico_yt.png); background-size: 20px; }
 
-.gnb_menu { position: fixed; top: 0; left: 0; right: 0; width: 100%; height: 100%; background-color: #fff; }
+.gnb_menu { position: fixed; top: 0; right: -100%; width: 100%; height: 100%; background-color: #fff; z-index: 11; overflow-y: auto; -webkit-transition: 0.2s ease-in; transition: 0.2s ease-in; }
 
-.gnb_menu .gnb_head { background-color: #0053a7; min-height: 70px; padding: 24px 30px; color: #fff; }
+.gnb_menu.open { right: 0; }
+
+.gnb_menu .gnb_head { min-height: 70px; padding: 24px 30px; color: #fff; background-color: #0053a7; }
 
 .gnb_menu .gnb_head * { color: inherit; font-size: 12px; }
 
@@ -397,6 +405,32 @@ h1.logo { display: block; width: 81px; height: 30px; margin: 0 auto; background-
 .gnb_menu .gnb_head .row p { max-width: 70%; }
 
 .gnb_menu .gnb_head .row p span { font-weight: 700; }
+
+.gnb_menu .gnb_wrap { height: 100%; }
+
+.gnb_menu .gnb_wrap .tablist { float: left; display: block; table-layout: inherit; width: 140px; height: 100%; background-color: #f2f4f6; border-right: 1px solid #e0e0e0; }
+
+.gnb_menu .gnb_wrap .tablist li { display: block; text-align: left; padding: 0; background-color: #f2f4f6; border-bottom: 0; }
+
+.gnb_menu .gnb_wrap .tablist li a, .gnb_menu .gnb_wrap .tablist li button { font-size: 14px; width: 100%; height: 100%; padding: 20px 20px 20px 30px; text-align: left; }
+
+.gnb_menu .gnb_wrap .tablist li a.current, .gnb_menu .gnb_wrap .tablist li button.current { background-color: #fff; color: #0053a7; font-weight: 450; }
+
+.gnb_menu .gnb_wrap .submenu { clear: inherit; float: right; width: calc(100% - 140px); overflow: hidden; overflow-y: auto; }
+
+.gnb_menu .gnb_wrap .submenu .item { padding: 16px 20px 14px; border-bottom: 1px solid #e0e0e0; }
+
+.gnb_menu .gnb_wrap .submenu .acco_head { padding-bottom: 0; }
+
+.gnb_menu .gnb_wrap .submenu .acco_head .acco_target { font-weight: 400; font-size: 13px; }
+
+.gnb_menu .gnb_wrap .submenu .acco_panel > ul { padding: 10px 15px 10px 20px; }
+
+.gnb_menu .gnb_wrap .submenu .acco_panel > ul li { padding: 10px 0; color: #666666; }
+
+.gnb_menu .gnb_wrap .submenu .acco_panel > ul li a { color: #666666; }
+
+.gnb_menu .gnb_wrap:after { content: ''; display: block; clear: both; }
 
 .fixed_menu { position: fixed; bottom: 0; left: 0; right: 0; width: 100%; height: 51px; height: calc(constant(safe-area-inset-bottom) + 51px); height: calc(env(safe-area-inset-bottom) + 51px); border-top: 1px solid #e5e5e5; background-color: #fff; z-index: 9; -webkit-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out; }
 
@@ -561,9 +595,9 @@ h1.logo { display: block; width: 81px; height: 30px; margin: 0 auto; background-
 
 .accord_wrap .acco_head .acco_target { display: block; position: relative; font-size: 14px; font-weight: 700; outline: none; }
 
-.accord_wrap .acco_head .acco_target i { position: absolute; right: 0; top: 8px; display: inline-block; margin-top: 0; margin-left: 2px; line-height: inherit; vertical-align: middle; width: 0; height: 0; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 6px solid #333333; }
+.accord_wrap .acco_head .acco_target i { position: absolute; right: 0; top: 50%; margin-top: -3px; display: inline-block; line-height: inherit; vertical-align: middle; width: 7px; height: 7px; border-left: 1px solid #333; border-bottom: 1px solid #333; -webkit-transform: rotate(-45deg); transform: rotate(-45deg); -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-.accord_wrap .acco_head[aria-expanded="true"] .acco_target i { width: 0; height: 0; border-left: 4px solid transparent; border-right: 4px solid transparent; border-bottom: 6px solid #333333; border-top: 0; }
+.accord_wrap .acco_head[aria-expanded="true"] .acco_target i { -webkit-transform: rotate(135deg); transform: rotate(135deg); }
 
 .accord_wrap [data-status="disabled"] .acco_panel { display: none; }
 
