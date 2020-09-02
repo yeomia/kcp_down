@@ -29,6 +29,7 @@
 			
 			 
 			 
+			 
 		</div>
 	</div>
 </header>
@@ -108,25 +109,59 @@
 			<button class="btn default btn_confirm">확인</button>
 		</dd>
 		
-		<dt><label for="frm3">전화번호</label></dt>
+		<dt><label for="frm4">전화번호</label></dt>
 		<dd class="mix">
 			<select>
 				<option>02</option>
 				<option>02</option>
 			</select>
-			<input type="text" id="frm8">
+			<input type="text" id="frm4">
+		</dd>
+
+		<dt><label for="">현재사용제품 <span class="required"><span class="a11y">필수</span></span></label></dt>
+		<dd><input type="text" value="윈도우즈* Series i 점보롤 화장지" required></dd>
+		<dd class="mix_unit">
+			<div class="inpwrap">
+				<span class="subtit">구입단가</span>
+				<input type="text" value="1,320" readonly>
+				<span class="unit">원</span>
+			</div>
+		</dd>
+		<dd class="mix_unit">
+			<div class="inpwrap">
+				<span class="subtit">사용량</span>
+				<input type="text" value="20" readonly>
+				<span class="unit">Case/월</span>
+			</div>
 		</dd>
 	</dl>
 
 	<div class="frm_half">
 		<dl class="frm_group">
-			<dt><label for="frm3">담당자</label></dt>
-			<dd><input type="text" id="frm3" placeholder="담당자명 입력"></dd>
+			<dt><label for="frm10">담당자</label></dt>
+			<dd><input type="text" id="frm10" placeholder="담당자명 입력"></dd>
 		</dl>
 		<dl class="frm_group">
-			<dt><label for="frm4">부서</label></dt>
-			<dd><input type="text" id="frm4" placeholder="부서입력"></dd>
+			<dt><label for="frm11">부서</label></dt>
+			<dd><input type="text" id="frm11" placeholder="부서입력"></dd>
 		</dl>
+	</div>
+
+	<div class="frm_group">
+		<div class="sel_wrap">
+			<label class="sel">
+				<input type="radio" name="reason" checked> 
+				<p>제품관련건의</p>
+			</label>
+			<label class="sel">
+				<input type="radio" name="reason"> 
+				<p>고객의견</p>
+			</label>
+			<label class="sel">
+				<input type="radio" name="reason"> 
+				<p>구매건의</p>
+			</label>
+		</div>
 	</div>
 
 	<h3>checkbox</h3>
@@ -221,10 +256,394 @@
 		</div>
 	</div>
 
+	<div>
+		<h3>신청현황 - 목록</h3>
+		<h4>type1</h4>
+		<div class="order_list type1">
+			<div class="item">
+				<!-- status type 
+					type1: 임시저장중, 승인중, 재승인 요청중, 파손교체/분실 신청중
+					type2: 승인완료, 발주가능, 배송지시완료
+					type3: 승인반려
+				-->
+				<span class="status type1">임시저장중</span>
+				<span class="status type1">승인중</span>
+				<span class="status type1">재승인 요청중</span>
+				<span class="status type1">파손교체/분실 신청중</span>
+
+				<span class="status type2">승인완료</span>
+				<span class="status type2">발주가능</span>
+				<span class="status type2">배송지시완료</span>
+
+				<span class="status type3">승인반려</span>
+				<div class="info">
+					<span>리버스</span>
+					<span class="company">홍길동</span>
+					<span class="date">2020.07.12</span>
+				</div>
+				<div class="summary">
+					<p>신청내역</p>
+					<ul>
+						<li><a href="#"><span class="code">[57200]</span> 윈도즈* Series i 점보롤 1000m 화장지 전용용기 <em>5</em>개</a></li>
+					</ul>
+				</div>
+				<div class="btn_wrap">
+					<button class="btn_line">설치피드백</button>
+				</div>
+			</div>
+		</div>
+		
+		<h4>type2</h4>
+		<div class="order_list type2">
+			<!-- loop -->
+			<div class="item">
+				<!-- status type 
+					type2: 승인완료, 배송지시완료
+				-->
+				<div class="info">
+					<span class="num">123456789123</span>
+					<span class="date">2020.07.12</span>
+				</div>
+
+				<div class="summary">
+					<span class="status type2">승인완료</span>
+					<span class="qty">10개</span>
+
+					<p class="name">화장실 쓰레기통 치우기 캠페인 스티커(남자화장실용, 행정안전부)</p>
+
+					<div class="prd">
+						<div class="thumb">
+							<img src="./assets/images/dummy/@product_01.png" alt="">
+						</div>
+						<dl>
+							<dt>종류</dt>
+							<dd>라벨(스티커)</dd>
+							<dt>제품 카테고리</dt>
+							<dd>기타 위생케어, 핸드타올, 화장실용 화장지</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<!--// loop -->
+		</div>
+	</div>
+
 </div>
 </div>
 
 <!-- footer -->
+<!-- gnb(menu) -->
+<div class="gnb_menu">
+	<div class="gnb_head">
+		<div class="row">
+			<!-- 파트너사 로그인 전 -->
+			<!-- <a href="#" class="btn_link _login">파트너사 로그인</a> -->
+			<!--// 파트너사 로그인 전 -->
+
+			<!-- 파트너사 로그인 후 -->
+			<p>현재 <span>Parter_01Parter_01</span> 로 로그인하셨습니다.</p>
+			<a href="#" class="btn_link _modi">정보수정</a>
+			<!--// 파트너사 로그인 후 -->
+
+			<a href="#" onclick="globalMenuClose();return false;" class="btn btn_close"><span class="a11y">close</span></a>
+		</div>
+	</div>
+	<div class="tab_wrap gnb_wrap">
+		<ul class="tablist" role="tablist">
+			<!-- 파트너사 해당메뉴 -->
+			<li><button class="current" data-tab="part_gnb-1">파트너정보</button></li>
+			<li><button class="" data-tab="part_gnb-2">주문신청</button></li>
+			<li><button class="" data-tab="part_gnb-3">커뮤니티</button></li>
+			<!--// 파트너사 해당메뉴 -->
+			<li><button class="" data-tab="gnb-1">프로페셔널</button></li>
+			<li><button class="" data-tab="gnb-2">브랜드</button></li>
+			<li><button class="" data-tab="gnb-3">제품</button></li>
+			<li><button class="" data-tab="gnb-4">솔루션</button></li>
+			<li><button class="" data-tab="gnb-5">현장혁신정보</button></li>
+			<li><button class="" data-tab="gnb-6">고객서비스</button></li>
+		</ul>
+		<div class="tab_contents submenu">
+			<!-- 파트너정보 -->
+			<div id="part_gnb-1" class="tab-cont current">
+				<div class="accord_wrap" role="submenu">
+					<div class="item" data-status="expanded">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">정보관리</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 주문신청 -->
+			<div id="part_gnb-2" class="tab-cont">
+				<div class="accord_wrap" role="submenu">
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">전용용기 신청</a>
+						</div>
+					</div>
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">무료사용 신청</a>
+						</div>
+					</div>
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">전용용기 파손/분실 신청</a>
+						</div>
+					</div>
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">영업도구 신청</a>
+						</div>
+					</div>
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">주문신청현황 <i></i></a>
+						</div>
+						<div class="acco_panel">
+							<ul>
+								<li><a href="#">전용용기</a></li>
+								<li><a href="#">무료사용</a></li>
+								<li><a href="#">전용용기 파손/분실</a></li>
+								<li><a href="#">영업도구</a></li>
+								<li><a href="#">전용용기 재고현황</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 커뮤니티 -->
+			<div id="part_gnb-3" class="tab-cont">
+				<div class="accord_wrap" role="submenu">
+				<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">공지사항</a>
+						</div>
+					</div>
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">고객의 소리</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 프로페셔널 소개 -->
+			<div id="gnb-1" class="tab-cont">
+				<div class="accord_wrap" role="submenu">
+				<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">사업부 소개</a>
+						</div>
+					</div>
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">파트너사 찾기</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 브랜드 -->
+			<div id="gnb-2" class="tab-cont">
+				<div class="accord_wrap" role="submenu">
+				<div class="item" data-status="expanded">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">크리넥스 <i></i></a>
+						</div>
+						<div class="acco_panel">
+							<ul>
+								<li><a href="#">소개</a></li>
+								<li><a href="#">크리넥스 센터풀</a></li>
+								<li><a href="#">크리넥스 에어셀</a></li>
+								<li><a href="#">크리넥스 드라이셀</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">스카트</a>
+						</div>
+					</div>
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">뽀삐</a>
+						</div>
+					</div>
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">크린가드</a>
+						</div>
+					</div>
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">와이프올 <i></i></a>
+						</div>
+						<div class="acco_panel">
+							<ul>
+								<li><a href="#">소개</a></li>
+								<li><a href="#">와이프올 에어포켓</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">킴테크</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 제품 -->
+			<div id="gnb-3" class="tab-cont">
+				<div class="accord_wrap" role="submenu">
+				<div class="item" data-status="expanded">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">전용용기 <i></i></a>
+						</div>
+						<div class="acco_panel">
+							<ul>
+								<li><a href="#">냅킨</a></li>
+								<li><a href="#">와이퍼</a></li>
+								<li><a href="#">위생케어</a></li>
+								<li><a href="#">핸드워시</a></li>
+								<li><a href="#">핸드타올</a></li>
+								<li><a href="#">화장실용 화장지</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">화장실 &amp; 위생 <i></i></a>
+						</div>
+						<div class="acco_panel">
+							<ul>
+								<li><a href="#">핸드타올</a></li>
+								<li><a href="#">화장실용화장지</a></li>
+								<li><a href="#">위생케어</a></li>
+								<li><a href="#">핸드워시</a></li>
+								<li><a href="#">미용티슈</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">와이핑 &amp; 세척 <i></i></a>
+						</div>
+						<div class="acco_panel">
+							<ul>
+								<li><a href="#">와이퍼</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">와이퍼 <i></i></a>
+						</div>
+						<div class="acco_panel">
+							<ul>
+								<li><a href="#">마스크</a></li>
+								<li><a href="#">글로브</a></li>
+								<li><a href="#">보호복</a></li>
+								<li><a href="#">위생화</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">사이언티픽 &amp; 연구개발 <i></i></a>
+						</div>
+						<div class="acco_panel">
+							<ul>
+								<li><a href="#">사이언티픽 글로브</a></li>
+								<li><a href="#">사이언티픽 마스크</a></li>
+								<li><a href="#">사이언티픽 보호복</a></li>
+								<li><a href="#">와이퍼</a></li>
+								<li><a href="#">위생케어</a></li>
+								<li><a href="#">핸드워시</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 솔루션 -->
+			<div id="gnb-4" class="tab-cont">
+				<div class="accord_wrap" role="submenu">
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">푸드 프로세싱&amp;서비스</a>
+						</div>
+					</div>
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">공중화장실</a>
+						</div>
+					</div>
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">오피스의 위생</a>
+						</div>
+					</div>
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">크린룸</a>
+						</div>
+					</div>
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">실험실</a>
+						</div>
+					</div>
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">개인보호구</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 현장 혁신 정보 -->
+			<div id="gnb-5" class="tab-cont">
+				<div class="accord_wrap" role="submenu">
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">건강과 안전</a>
+						</div>
+					</div>
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">고객경험</a>
+						</div>
+					</div>
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">생산효율성</a>
+						</div>
+					</div>
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">우리의 환경</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 고객 서비스 -->
+			<div id="gnb-6" class="tab-cont">
+				<div class="accord_wrap" role="submenu">
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">제품구매 상담</a>
+						</div>
+					</div>
+					<div class="item" data-status="hidden">
+						<div class="acco_head">
+							<a href="#" class="acco_target" tabindex="0">고객상담</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!--// gnb(menu) -->
+
 
 <!-- search layer -->
 <div class="search_layer">
@@ -264,7 +683,7 @@
 <div class="fixed_menu">
   <div class="row">
     <p class="menu mn01"><a href="#"><span>홈</span></a></p>
-    <p class="menu mn02"><a href="#"><span>카테고리</span></a></p>
+    <p class="menu mn02"><a href="#" onclick="globalMenu();return false;"><span>카테고리</span></a></p>
     <p class="menu mn03"><a href="#" onclick="searchlayer();return false;"><span>검색</span></a></p>
     <p class="menu mn04"><a href="#"><span>고객문의</span></a></p>
   </div>
@@ -272,6 +691,9 @@
 <!--// fixed menu -->
 
 <footer class="footer">
+	<div class="social">
+		<a href="#">유한킴벌리 프로페셔널<br><span>카카오톡 플러스</span> 친구 추가하기</a>
+	</div>
 	<div class="row">
 		<ul class="util">
 			<li><a href="#">사이트이용약관</a></li>

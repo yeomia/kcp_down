@@ -11,23 +11,22 @@
 
 <meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
 <title>유한킴벌리 프로페셔널</title>
-<!-- <link rel="icon" href="../assets/images/common/favicon.ico" type="image/x-icon"> -->
-<link rel="stylesheet" href="../assets/css/ui.css" />
-<script type="text/javascript" src="../assets/js/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="../assets/js/ui-plugin.js"></script>
+<!-- <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon"> -->
+<link rel="stylesheet" href="./assets/css/ui.css" />
+<script type="text/javascript" src="./assets/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="./assets/js/ui-plugin.js"></script>
 
+	<link rel="stylesheet" href="./assets/css/main.css" />
 </head>
-<body>
+<body class="main">
 <div class="skipnavigation"><a href="#container">본문 바로가기</a></div>
 <!-- header -->
 
-<header class="header subhead">
+<header class="header ">
 	<div class="row">
 		<h1 class="logo"><a href="#"><span class="a11y">유한킴벌리 프로페셔널</span></a></h1>
 		<div class="head">
 			<a href="#" class="btn btn_back"><span class="a11y">preview page</span></a>
-			
-				<h2>신청현황</h2>
 			
 			 
 			 
@@ -38,78 +37,324 @@
 
 <!-- //header -->
 
-<div class="wrap">
-	<!-- container -->
-	<div class="container partner">
-		<!-- tab navi -->
-		<div class="tab_navi">
+<div class="wrap partner_wrap">
+	<!-- 주문현황 -->
+	<div class="partner_status">
+		<div class="partner_info">
+			<p>현재 <span>Parter_01Parter_01</span> 로 로그인하셨습니다.</p>
+			<a href="#" class="btn_modi">정보수정 <i></i></a>
+		</div>
+		<section id="statswipe" class="swiper-container">
+			<div class="swiper-wrapper">
+				<!-- slide -->
+				<div class="item swiper-slide">
+					<div class="conts">
+						<p class="type_feedback"><i></i>피드백 미등록</p>
+						<p class="desc">현재 피드백 미등록율은 전용용기대여 <strong>65</strong><span class="unit">%</span>,<br>무료사용 <strong>70</strong><span class="unit">%</span> 입니다.</p>
+						<p class="summary">피드백 미등록이 <span>80% 미만</span>일 경우 신청이 제한 되오니 <span>꼭!</span> 피드백 등록을 하시기 바랍니다.</p>	
+					</div>
+					<ul class="qty_list">
+						<li>
+							<p class="title">전용용기 대여</p>
+							<p class="qty">56</p>
+						</li>
+						<li>
+							<p class="title">무료사용</p>
+							<p class="qty">38</p>
+						</li>
+					</ul>
+				</div>
+				<div class="item swiper-slide">
+					<div class="conts">
+						<p class="type_feedback"><i></i>승인반려</p>
+						<p class="desc">신청하신 내역 중에서 아래와 같이 <strong>승인이 반려된 항목</strong>이 있습니다.</p>
+						<p class="summary">확인 후 재 승인요청을 하시기 바랍니다.</p>
+					</div>
+					<ul class="qty_list">
+						<li>
+							<p class="title">전용용기 대여</p>
+							<p class="qty">56</p>
+						</li>
+						<li>
+							<p class="title">전용용기 파손/분실</p>
+							<p class="qty">38</p>
+						</li>
+						<li>
+							<p class="title">무료사용</p>
+							<p class="qty">38</p>
+						</li>
+					</ul>
+				</div>
+				<!-- 데이터가 없는 경우 -->
+				<div class="item swiper-slide">
+					<div class="conts">
+						<p class="type_feedback"><i></i>피드백 미등록</p>
+						<p class="desc">현재 피드백 미등록율은 전용용기대여 <strong>0</strong><span class="unit">%</span>,<br>무료사용 <strong>0</strong><span class="unit">%</span> 입니다.</p>
+						<p class="summary">피드백 미등록이 <span>80% 미만</span>일 경우 신청이 제한 되오니 <span>꼭!</span> 피드백 등록을 하시기 바랍니다.</p>
+					</div>
+					<ul class="qty_list">
+						<li>
+							<p class="title">전용용기 대여</p>
+							<p class="qty">0</p>
+						</li>
+						<li>
+							<p class="title">무료사용</p>
+							<p class="qty">0</p>
+						</li>
+					</ul>
+				</div>
+				<div class="item swiper-slide">
+					<div class="conts">
+						<p class="type_feedback"><i></i>승인반려</p>
+						<p class="desc">신청하신 내역이 없습니다</p>
+						<p class="summary">-</p>
+					</div>
+					<ul class="qty_list">
+						<li>
+							<p class="title">전용용기 대여</p>
+							<p class="qty">0</p>
+						</li>
+						<li>
+							<p class="title">전용용기 파손/분실</p>
+							<p class="qty">0</p>
+						</li>
+						<li>
+							<p class="title">무료사용</p>
+							<p class="qty">0</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!--// 주문현황 -->
+
+	<div class="app_link">
+		<ul>
+			<li class="lnk01"><i></i>영업도구<br>신청</li>
+			<li class="lnk02"><i></i>전용용기<br>신청</li>
+			<li class="lnk03"><i></i>무료사용<br>신청</li>
+			<li class="lnk04"><i></i>전용용기<br>파손/분실<br>신청</li>
+		</ul>
+	</div>
+
+	<div class="search">
+		<div class="row">
+			<h3>제품자료 검색</h3>
+			<div class="inpwrap">
+				<input type="text" placeholder="제품코드를 입력하세요">
+				<button class="btn btn_search"><span class="a11y">검색</span></button>
+			</div>
+		</div>
+	</div>
+
+	<div class="noti_board">
+		<div class="board_head">
+			<!-- <button class="btn btn_prev last"><i></i><span class="a11y">이전 달</span></button> -->
+			<button class="btn btn_prev"><i></i><span class="a11y">이전 달</span></button>
+			<!-- <button class="btn btn_next"><i></i><span class="a11y">다음 달</span></button> -->
+			<button class="btn btn_next last"><i></i><span class="a11y">다음 달</span></button>
+			<p><input type="text" value="2020.07" class="datepicker short" value="" readonly></p>
+			<a href="#" class="btn_link">최신</a>
+		</div>
+		<div class="board_wrap">
+			<!-- 최대 5개까지 -->
 			<ul>
-				<li><a href="#">전용용기</a></li>
-				<li><a href="#">무료사용</a></li>
-				<li><a href="#">전용용기 파손/손실</a></li>
-				<li class="active"><a href="#">영업도구</a></li> <!-- 활성화 .active -->
-				<li><a href="#">전용용기 재고현황</a></li>
+				<li><a href="#">
+					<p class="title">용산지점 관련 프로모션 확인바랍니다.</p>
+					<div class="etc">
+						<p class="type">담당자공지</p>
+						<p class="date">2020.07.31</p>
+					</div>
+				</a></li>
+				<li><a href="#">
+					<p class="title">파트너사 혜택이 파트너사 혜택이파트너사 혜택이파트너사 혜택이 강화됩니다.</p>
+					<div class="etc">
+						<p class="type">프로모션</p>
+						<p class="date">2020.07.31</p>
+					</div>
+				</a></li>
+				<li><a href="#">
+					<p class="title">크리넥스 센터풀 신제품이 7/2일 출시됩니다.</p>
+					<div class="etc">
+						<p class="type">주요공지</p>
+						<p class="date">2020.07.31</p>
+					</div>
+				</a></li>
+				<li><a href="#">
+					<p class="title">크리넥스 센터풀 신제품이 7/2일 출시됩니다.</p>
+					<div class="etc">
+						<p class="type">주요공지</p>
+						<p class="date">2020.07.31</p>
+					</div>
+				</a></li>
+				<li><a href="#">
+					<p class="title">파트너사 혜택이 강화됩니다.</p>
+					<div class="etc">
+						<p class="type">프로모션</p>
+						<p class="date">2020.07.31</p>
+					</div>
+				</a></li>
 			</ul>
 		</div>
+	</div>
 
-		<!-- order list -->
-		<div class="row order_list type2">
-			<p class="desc">영업도구를 받지 못하셨거나 배송이 일주일 이상 지체된 경우 이메일 <em>xxxxx@xxxxx.co.kr</em>로 문의바랍니다. <span>(신청일, 주문번호 기재 필수)</span></p>
-			
+	<!-- 성공사례 -->
+	<div class="succ_case">
+		<div id="caseswipe" class="swiper-container">
+			<h3>성공사례</h3>
+			<div class="swiper-wrapper">
+				<!-- slide -->
+				<div class="swiper-slide">
+					<a href="#">
+						<div class="figure">
+							<img src="./assets/images/dummy/@case_01.jpg" alt="">
+						</div>
+						<div class="info">
+							<p class="desc">안전을 최우선으로 하면 생산성과 효율성이 향상됩니다.</p>
+						</div>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#">
+						<div class="figure">
+							<img src="./assets/images/dummy/@case_02.jpg" alt="">
+						</div>
+						<div class="info">
+							<p class="desc">안전을 최우선으로 하면 생산성과 효율성이 향상됩니다.</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 설치결과 피드백 -->
+	<div class="feedback"> 
+		<h3>설치결과 피드백</h3>
+		<ul class="feed_tab">
+			<li class="tabs active"><a href="#">전용용기</a></li>
+			<li class="tabs"><a href="#">무료사용</a></li>
+		</ul>
+		<!-- 전용용기 -->
+		<div class="row order_list type1">
 			<!-- loop -->
 			<div class="item">
 				<!-- status type 
-					type2: 승인완료, 배송지시완료
+					type1: 임시저장중, 승인중, 재승인 요청중, 파손교체/분실 신청중
+					type2: 승인완료, 발주가능
+					type3: 승인반려
 				-->
+				<span class="status type1">임시저장중</span>
+				<!-- <span class="num">123456789123</span> --> <!-- 임시저장중일 경우 미노출 -->
+
 				<div class="info">
-					<span class="num">123456789123</span>
+					<span class="company">리버스</span>
+					<span>홍길동</span>
 					<span class="date">2020.07.12</span>
 				</div>
-
 				<div class="summary">
-					<span class="status type2">승인완료</span>
-					<span class="qty">10개</span>
-
-					<p class="name">화장실 쓰레기통 치우기 캠페인 스티커(남자화장실용, 행정안전부)</p>
-
-					<div class="prd">
-						<div class="thumb">
-							<img src="../assets/images/dummy/@product_01.png" alt="">
-						</div>
-						<dl>
-							<dt>종류</dt>
-							<dd>라벨(스티커)</dd>
-							<dt>제품 카테고리</dt>
-							<dd>기타 위생케어, 핸드타올, 화장실용 화장지</dd>
-						</dl>
-					</div>
+					<p>신청내역</p>
+					<ul>
+						<li><a href="#"><span class="code">[57200]</span> 윈도즈* Series i 점보롤 1000m 화장지 전용용기 <em>5</em>개</a></li>
+						<li><a href="#"><span class="code">[57200]</span> 윈도즈* Series i 점보롤 1000m 화장지 전용용기 <em>5</em>개</a></li>
+					</ul>
+				</div>
+				<div class="btn_wrap">
+					<button class="btn_line" disabled>설치피드백 완료</button> <!-- 설치피드백 등록 시 비활성화 (disabled) -->
 				</div>
 			</div>
 			<!--// loop -->
 
 			<div class="item">
+				<span class="status type2">발주가능</span>
+				<span class="num">123456789123</span>
 				<div class="info">
-					<span class="num">123456789123</span>
+					<span class="company">리버스</span>
+					<span>홍길동</span>
 					<span class="date">2020.07.12</span>
 				</div>
-
 				<div class="summary">
-					<span class="status type2">배송지시완료</span>
-					<span class="qty">10개</span>
+					<p>신청내역</p>
+					<ul>
+						<li><a href="#"><span class="code">[57200]</span> 윈도즈* Series i 물비누 <em>20</em>개</a></li>
+					</ul>
+				</div>
+				<div class="btn_wrap">
+					<button class="btn_line">설치피드백 등록</button>
+				</div>
+			</div>
 
-					<p class="name">화장실 쓰레기통 치우기 캠페인 스티커(남자화장실용, 행정안전부)</p>
+			<div class="item">
+				<span class="status type2">승인완료</span>
+				<span class="num">123456789123</span>
+				<div class="info">
+					<span class="company">리버스</span>
+					<span>홍길동</span>
+					<span class="date">2020.07.12</span>
+				</div>
+				<div class="summary">
+					<p>신청내역</p>
+					<ul>
+						<li><a href="#"><span class="code">[57200]</span> 윈도즈* Series i 물비누 <em>20</em>개</a></li>
+					</ul>
+				</div>
+				<div class="btn_wrap">
+					<button class="btn_line">설치피드백 등록</button>
+				</div>
+			</div>
 
-					<div class="prd">
-						<div class="thumb">
-							<img src="../assets/images/dummy/@product_01.png" alt="">
-						</div>
-						<dl>
-							<dt>종류</dt>
-							<dd>라벨(스티커)</dd>
-							<dt>제품 카테고리</dt>
-							<dd>기타 위생케어, 핸드타올</dd>
-						</dl>
-					</div>
+			<!-- more -->
+			<div class="more_view">
+				<a href="#">더보기 (10/106) <i></i></a>
+			</div>
+		</div>
+
+		<!-- 무료사용 -->
+		<div class="row order_list type1">
+			<!-- loop -->
+			<div class="item">
+				<!-- status type 
+					type1: 임시저장중, 승인중, 재승인 요청중
+					type2: 승인완료, 배송지시완료
+					type3: 승인반려
+				-->
+				<span class="status type2">배송지시완료</span>
+				<span class="num">123456789123</span> <!-- 임시저장중일 경우 미노출 -->
+
+				<div class="info">
+					<span class="company">리버스</span>
+					<span>KKG신청</span>
+					<span class="date">2020.07.12</span>
+				</div>
+				<div class="summary">
+					<p>신청내역</p>
+					<ul>
+						<li><a href="#"><span class="code">[57200]</span> 윈도즈* Series i 물비누 <em>20</em>개</a></li>
+					</ul>
+				</div>
+				<div class="btn_wrap">
+					<button class="btn_line">결과피드백 등록</button> <!-- 비활성화 (disabled) -->
+				</div>
+			</div>
+			<!--// loop -->
+			<div class="item">
+				<span class="status type3">승인반려</span>
+				<span class="num">123456789123</span>
+				<div class="info">
+					<span class="company">리버스</span>
+					<span>마케팅 프로그램</span>
+					<span class="date">2020.07.12</span>
+				</div>
+				<div class="summary">
+					<p>신청내역</p>
+					<ul>
+						<li><a href="#"><span class="code">[57200]</span> 윈도즈* Series i 물비누 <em>20</em>개</a></li>
+						<li><a href="#"><span class="code">[57200]</span> 윈도즈* Series i 물비누 <em>20</em>개</a></li>
+					</ul>
+				</div>
+				<div class="btn_wrap">
+					<button class="btn_line" disabled>결과피드백 완료</button>
 				</div>
 			</div>
 
@@ -120,7 +365,6 @@
 		</div>
 
 	</div>
-	<!--// container -->
 </div>
 <!--// wrap -->
 
@@ -484,8 +728,8 @@
 <!--// fixed menu -->
 
 <footer class="footer">
-	<div class="social">
-		<a href="#">유한킴벌리 프로페셔널<br><span>카카오톡 플러스</span> 친구 추가하기</a>
+	<div class="enquiry">
+		<a href="mailto:professional@ykp.co.kr">사이트 이용문의는 이메일<br><span>professional@ykp.co.kr</span>로 문의바랍니다.</a>
 	</div>
 	<div class="row">
 		<ul class="util">
@@ -531,9 +775,30 @@
 		<p>©2013 Kimberly-Clark Worldwide Inc.<br>All Right Reserved.</p>
 	</div>
 </footer>
-<script type="text/javascript" src="../assets/js/ui.js"></script>
+<script type="text/javascript" src="./assets/js/ui.js"></script>
 
 <!-- //footer -->
+<script>
+if($('#statswipe').length > 0){ // 신청현황
+	var mainswipe = new Swiper('#statswipe', {
+		loop: false,
+		slidesPerView: 1.2,
+		spaceBetween: 15,
+		parallax: true,
+		observer: true,
+		observeParents: true,
+	});
+}
+if($('#caseswipe').length > 0){ // 성공사례
+	var caseswipe = new Swiper('#caseswipe', {
+		slidesPerView: 1.5796,
+		parallax: true,
+		observer: true,
+		observeParents: true,
+		spaceBetween: 22
+	});
+}
+</script>
 
 </body>
 </html>
