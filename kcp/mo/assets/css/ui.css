@@ -1096,9 +1096,13 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .order_list.type2 .info { padding-top: 0; }
 
-.order_list.type2 .qty:before { content: ''; display: inline-block; width: 1px; height: 9px; margin: 0 8px 0 -4px; background-color: #e0e0e0; }
+.order_list.type2 .qty { display: inline-block; margin-top: -2px; font-weight: 300; }
 
-.order_list.type2 .name { margin: 5px 0 20px; font-size: 15px; font-weight: 500; line-height: 24px; }
+.order_list.type2 .qty:before { content: ''; display: inline-block; width: 1px; height: 9px; margin: 0 8px; background-color: #e0e0e0; }
+
+.order_list.type2 .name { margin: 10px 0; font-size: 12px; font-weight: 500; line-height: 18px; }
+
+.order_list.type2 .summary > ul li:nth-child(n+2) { margin-top: 20px; padding-top: 20px; border-top: 1px solid #eee; }
 
 .order_list.type2 .prd { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
@@ -1110,11 +1114,11 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .order_list.type2 .prd dt:last-of-type, .order_list.type2 .prd dd:last-of-type { width: 100%; }
 
-.order_list.type2 .prd dt { width: 65px; }
+.order_list.type2 .prd dt { width: 40px; }
 
 .order_list.type2 .prd dt:last-of-type { margin-top: 10px; }
 
-.order_list.type2 .prd dd { width: calc(100% - 65px); font-weight: 300; color: #666; }
+.order_list.type2 .prd dd { width: calc(100% - 40px); font-weight: 300; color: #666; }
 
 .addphoto { margin-bottom: 10px; }
 
@@ -1756,13 +1760,13 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .partner .order_list .filter { float: right; }
 
-.partner .order_list .desc { position: relative; clear: both; padding-left: 24px; text-indent: -24px; color: #666; font-weight: 300; }
+.partner .order_list .desc { position: relative; clear: both; font-size: 12px; padding-left: 24px; text-indent: -24px; color: #666; font-weight: 300; }
 
 .partner .order_list .desc:before { content: ''; display: inline-block; width: 15px; height: 15px; margin-right: 8px; vertical-align: middle; background: url(../images/icon/ico_info.png) no-repeat center center/cover; }
 
-.partner .order_list .desc em { color: #0053a7; font-weight: 400; }
+.partner .order_list .desc em { color: #0053a7; font-weight: 400; font-size: inherit; }
 
-.partner .order_list .desc span { display: block; padding-left: 24px; color: #999; }
+.partner .order_list .desc span { display: block; font-size: inherit; text-indent: 0; color: #999; }
 
 .partner .order_list .item { background-color: #fff; }
 
