@@ -944,7 +944,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .nodata > span { display: block; font-weight: 300; color: #666666; line-height: 1.6; }
 
-.nodata_recom { padding-top: 30px; margin-right: -30px; }
+.nodata_recom { padding-top: 30px; }
 
 .nodata_recom > p { padding-bottom: 27px; text-align: center; }
 
@@ -1244,7 +1244,33 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .search_cont .search_frm-input .txt span { font-weight: 400; color: #00abe4; }
 
-.search_result { padding-bottom: 70px; border-top: 1px solid #eeeeee; }
+.search_result { padding-bottom: 50px; border-top: 1px solid #eeeeee; }
+
+.search_result .nodata { padding: 50px 0; }
+
+.product_tree dt { padding-bottom: 7px; font-size: 14px; border-bottom: 1px solid #eeeeee; }
+
+.product_tree dt i { display: inline-block; width: 20px; height: 20px; background-repeat: no-repeat; background-size: cover; background-position: 0 0; vertical-align: middle; }
+
+.product_tree dd { padding: 10px 10px 20px 20px; }
+
+.product_tree dd .item { position: relative; float: left; width: calc(50% - 10px); padding-left: 10px; padding-top: 7px; padding-bottom: 7px; }
+
+.product_tree dd .item a { color: #666666; font-size: 12px; font-weight: 300; }
+
+.product_tree dd .item:before { content: ''; position: absolute; left: 0; top: 48%; display: block; width: 2px; height: 2px; background-color: #7fa9d3; }
+
+.product_tree dd:after { content: ''; display: block; clear: both; }
+
+.product_tree .ptype01 i { background-image: url(../images/icon/ico_ptype01.png); background-size: 16px; }
+
+.product_tree .ptype02 i { background-image: url(../images/icon/ico_ptype02.png); background-size: 15px; }
+
+.product_tree .ptype03 i { background-image: url(../images/icon/ico_ptype03.png); background-size: 13px; }
+
+.product_tree .ptype04 i { background-image: url(../images/icon/ico_ptype04.png); background-size: 16px; }
+
+.product_tree .ptype05 i { background-image: url(../images/icon/ico_ptype05.png); background-size: 14px; }
 
 .filter_layer { position: fixed; top: 0; right: -100%; width: calc(100% - 100px); height: 100%; background-color: #fff; z-index: 10; -webkit-transition: 0.2s ease-in; transition: 0.2s ease-in; }
 
