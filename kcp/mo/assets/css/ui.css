@@ -179,7 +179,7 @@ hr { height: 10px; margin: 0; border: none; background-color: #f2f4f6; }
 
 .chkwrap input[type=checkbox] + label { display: inline-block; cursor: pointer; min-width: 100px; padding-left: 23px; margin-right: 5px; background-image: url(../images/common/uncheck.png); background-repeat: no-repeat; background-size: 1.75rem; background-position: 0 3px; }
 
-.chkwrap input[type=checkbox] + label span { display: inline-block; margin-left: 3px; vertical-align: middle; font-size: 12px; font-weight: 300; }
+.chkwrap input[type=checkbox] + label span { display: inline-block; margin-left: 3px; margin-top: -2px; vertical-align: middle; font-size: 11px; font-weight: 300; }
 
 .chkwrap input[type=checkbox] + label span.code { font-size: 13px; vertical-align: inherit; }
 
@@ -1286,7 +1286,9 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .filter_layer .accord_wrap .chkwrap { margin-bottom: 1.8rem; }
 
-.filter_layer .accord_wrap .item { padding: 0 3rem; }
+.filter_layer .accord_wrap .chkwrap i { display: inline-block; width: 10px; height: 10px; margin-left: 3px; margin-right: 3px; background-image: url(../images/icon/icon_depth.png); background-size: 5px; background-repeat: no-repeat; background-position: center top 0; vertical-align: middle; }
+
+.filter_layer .accord_wrap .item { padding: 0 2.6rem .5rem; }
 
 .filter_layer .accord_wrap .item.item_category { margin-bottom: 2rem; border-bottom: 10px solid #f2f4f6; }
 
