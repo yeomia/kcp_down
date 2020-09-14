@@ -1,5 +1,6 @@
 $(document).ready(function () {
 	if($('.datepicker').length > 0) datepickerControl();
+	if($('.video_util').length > 0) videoControl();
 
 	// checkbox all 
 	if($('.chkall').length > 0) {
@@ -166,6 +167,59 @@ var rentTypesel = function (type) {
 			$(this).addClass('active')
 		}else {
 			$(this).removeClass('active')
+		}
+	});
+}
+
+var videoControl = function(){
+	$('.swiper-slide').each(function(i) {
+		var media = $(this).find('video').get(0);
+		var control = $(this).find('.btn_play');
+
+		function controlShow() {
+			$(control).animate({'opacity':1});
+		}
+		function controlHide() {
+			$(control).animate({'opacity':0});
+		}
+		function playPauseMedia() {
+			if(media.paused) {
+				media.play();
+				$(control).addClass('stop');
+				$(this).find('.video_util').removeClass('cover');
+				controlHide();
+			} else {
+				media.pause();
+				$(control).removeClass('stop');
+				$(this).find('.video_util').addClass('cover');
+				controlShow();
+			}
+		}
+		if($(control).length > 0) {
+			$(control).click(playPauseMedia);
+		}
+		$(this).on('mouseenter mouseover',controlShow).on('mouseleave',function(){
+			if(media.paused == false) {
+				controlHide();
+			}
+		});
+		$(this).on('focus',controlShow).on('blur',function(){
+			if(media.paused == false) {
+				controlHide();
+			}
+		});
+
+		if($('.prd-thumbs').length > 0) {
+			$('.prd-thumbs').find('.swiper-slide').on('click', function() {
+				if($(control).length > 0) {
+					if(media.paused == false) {
+						media.pause();
+						$(control).removeClass('stop');
+						$(this).find('.video_util').addClass('cover');
+						controlShow();
+					}
+				}
+			});
 		}
 	});
 }

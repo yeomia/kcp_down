@@ -1410,15 +1410,27 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .introduction .details_slide:first-of-type { border-top: 0; }
 
-.introduction .details_slide h4 { font-size: 14px; font-weight: 400; }
+.introduction .details_slide h4 { margin-bottom: 30px; font-size: 14px; font-weight: 400; }
+
+.introduction .details_slide .img { position: relative; padding-top: 100%; overflow: hidden; background-image: url(../images/common/default_image.png); background-size: cover; background-position: center 0; background-repeat: no-repeat; }
+
+.introduction .details_slide .img img { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
 .introduction .details_slide .desc { padding-top: 4px; }
 
 .introduction .details_slide .desc li { padding: 0; font-weight: 300; }
 
-.introduction .prd_slide .figure { position: relative; padding-bottom: 100%; overflow: hidden; }
+.introduction .prd_slide .figure { position: relative; padding-bottom: 100%; overflow: hidden; background-image: url(../images/common/default_image.png); background-size: cover; background-position: center 0; background-repeat: no-repeat; }
 
 .introduction .prd_slide .figure img { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+
+.introduction .prd_slide .figure video, .introduction .prd_slide .figure .youtube_vod { position: absolute; top: 50%; left: 50%; max-width: 100%; min-width: 100%; min-height: 100%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+
+.introduction .prd_slide .figure .video_util { position: absolute; top: 0; width: 100%; height: 100%; overflow: hidden; }
+
+.introduction .prd_slide .figure .video_util button.btn_play > span { display: block; position: absolute; top: 50%; left: 50%; min-width: 50px; min-height: 50px; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); background-image: url(../images/common/btn_play.png); background-size: cover; background-position: center 0; background-repeat: no-repeat; }
+
+.introduction .prd_slide .figure .video_util button.btn_play.stop > span { background-image: url(../images/common/btn_stop.png); }
 
 .introduction .prd_slide .swiper-pagination-fraction { left: auto; right: 30px; bottom: 7px; width: auto; padding: 0 8px; font-size: 10px; color: #fff; background-color: #999; border-radius: .925rem; z-index: 5; }
 
@@ -1471,6 +1483,54 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 .introduction .prd_summary .desc ul li { padding-left: 10px; font-size: inherit; text-indent: -10px; }
 
 .introduction .prd_summary .desc ul li:before { content: '- '; }
+
+.introduction .prd_lineup { padding: 40px 0; }
+
+.introduction .prd_lineup h4 { font-size: 14px; font-weight: 500; }
+
+.introduction .prd_lineup .desc { margin-bottom: 20px; font-size: 12px; font-weight: 300; color: #666; }
+
+.introduction .prd_lineup a { display: block; text-align: center; }
+
+.introduction .innov_slide { padding: 40px 0; }
+
+.introduction .innov_slide h4 { margin-bottom: 20px; font-size: 15px; font-weight: 400; }
+
+.introduction .innov_slide .swiper-container .figure { position: relative; width: 100%; padding-top: 100%; background-image: url(../images/common/default_image.png); background-size: cover; background-position: center 0; background-repeat: no-repeat; overflow: hidden; }
+
+.introduction .innov_slide .swiper-container .figure img { position: absolute; top: 0; left: 0; width: 100%; }
+
+.introduction .innov_slide .swiper-container .info { margin-top: 10px; }
+
+.introduction .innov_slide .swiper-container .info .title { font-size: 14px; min-height: 4.6rem; white-space: normal; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; }
+
+.introduction .borad_wrap .innov_slide { padding: 0; }
+
+.introduction .borad_wrap .innov_slide .swiper-container { padding: 0 0 40px 60px; }
+
+.introduction .borad_wrap .board_list { padding-top: 50px; border-top: 1px solid #eee; }
+
+.layer_body.lineuppopup .layer_cont { padding: 0; }
+
+.layer_body.lineuppopup .layer_cont .img { margin-top: -22px; }
+
+.layer_body.lineuppopup .breadcrumb { padding: 0; }
+
+.layer_body.lineuppopup .row { margin: 0 -30px; padding: 30px; }
+
+.layer_body.lineuppopup .row + .row { border-top: 10px solid #f2f4f6; }
+
+.layer_body.lineuppopup .cate { margin-bottom: 25px; font-size: 14px; font-weight: 700; }
+
+.layer_body.lineuppopup .cate span { font-size: 13px; font-weight: 400; color: #666; }
+
+.layer_body.lineuppopup .subcate { margin: 10px 0; font-size: 11px; }
+
+.layer_body.lineuppopup .subcate span { font-size: inherit; color: #666; }
+
+.layer_body.lineuppopup .item_list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.layer_body.lineuppopup .item_list li { width: 25%; }
 
 /** order **/
 .order h2.title { margin-bottom: 15px; font-size: 17px; font-weight: 500; }
@@ -1792,6 +1852,8 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .partner .order_num dd { font-size: 14px; font-weight: 400; color: #0053a7; }
 
+.partner .frm_group .date.single { margin-top: -10px; }
+
 .partner .search_order { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-line-pack: center; align-content: center; margin: 20px 30px; }
 
 .partner .search_order select { width: 31.66666666667%; padding: 9px 10px; border: 1px solid #000; background-position: right 10px center; }
@@ -1818,9 +1880,15 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .partner .order_list.type2 > .desc { padding-top: 20px; }
 
-.partner .rental .tbl_list, .partner .forecast .tbl_list { margin-bottom: 20px; }
+.partner .rental .tbl_list { margin-bottom: 20px; }
 
-.partner .rental .btn_wrap, .partner .forecast .btn_wrap { margin-bottom: 10px; }
+.partner .rental .btn_wrap { margin-bottom: 10px; }
+
+.partner .forecast .inpwrap .subtit { width: 110px; }
+
+.partner .forecast .inpwrap input[type="text"] { width: calc(100% - 150px); }
+
+.partner .forecast .inpwrap .unit { width: 40px; }
 
 .partner .feedback .frm_group { margin-bottom: 20px; }
 

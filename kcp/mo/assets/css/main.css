@@ -1,3 +1,5 @@
+.main .footer .social { display: block; }
+
 .main .keyvisual .figure { padding-top: 82%; background-size: cover; background-position: center 0; background-repeat: no-repeat; }
 
 .main .keyvisual .info { padding: 25px 30px; }
