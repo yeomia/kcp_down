@@ -1491,9 +1491,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .introduction .prd_slide { float: left; position: relative; width: 570px; margin-right: 60px; }
 
-.introduction .prd_slide .prd-swipe { margin-left: 90px; }
-
-.introduction .prd_slide .prd-swipe .figure { position: relative; width: 492px; padding-bottom: 100%; overflow: hidden; }
+.introduction .prd_slide .prd-swipe .figure { position: relative; width: 492px; margin: 0 auto; padding-bottom: 86.316%; overflow: hidden; }
 
 .introduction .prd_slide .prd-swipe .figure img, .introduction .prd_slide .prd-swipe .figure video, .introduction .prd_slide .prd-swipe .figure .youtube_vod { position: absolute; top: 50%; left: 50%; max-width: 100%; min-width: 100%; min-height: 100%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
@@ -1503,17 +1501,27 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .introduction .prd_slide .prd-swipe .figure .video_util button.btn_play.stop > span { background-image: url(../images/common/btn_stop.png); }
 
-.introduction .prd_slide .prd-swipe .figure .video_util button.btn_play:before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); }
+.introduction .prd_slide .prd-swipe .figure .video_util button.btn_play:before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3); }
 
-.introduction .prd_slide .prd-thumbs { position: absolute; left: 0; top: 0; width: 90px; height: 100%; z-index: 1; }
+.introduction .prd_slide .prd-thumbs { position: relative; width: 100%; height: 82px; z-index: 1; }
 
-.introduction .prd_slide .prd-thumbs .swiper-slide { width: 90px; height: 90px !important; margin-bottom: 10px; cursor: pointer; }
+.introduction .prd_slide .prd-thumbs .swiper-wrapper { margin-left: 30px; }
 
-.introduction .prd_slide .prd-thumbs .swiper-slide:last-child { margin-bottom: 0; }
+.introduction .prd_slide .prd-thumbs .swiper-slide { width: 80px !important; height: 80px !important; margin-right: 5px; cursor: pointer; }
 
-.introduction .prd_slide .prd-thumbs .swiper-slide.swiper-slide-thumb-active .figure { border-color: #0053a7; }
+.introduction .prd_slide .prd-thumbs .swiper-slide.swiper-slide-thumb-active .figure { border: 1px solid #0053a7; }
 
-.introduction .prd_slide .prd-thumbs .figure { border: 1px solid #eeeeee; }
+.introduction .prd_slide .prd-thumbs .figure { position: relative; width: 100%; padding-bottom: 100%; border: 1px solid #fff; overflow: hidden; }
+
+.introduction .prd_slide .prd-thumbs .figure img { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+
+.introduction .prd_slide .prd-thumbs .figure.video:before { content: ''; display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-image: url(../images/common/btn_play.png); background-size: 30px; background-repeat: no-repeat; background-position: center center; z-index: 1; }
+
+.introduction .prd_slide .prd-thumbs .swiper-button-next, .introduction .prd_slide .prd-thumbs .swiper-button-prev { top: 27%; height: 82px; background-size: 8px; background-repeat: no-repeat; background-position: center center; background-color: white; }
+
+.introduction .prd_slide .prd-thumbs .swiper-button-next { right: 0; background-image: url(../images/icon/ico_cal_next.png); }
+
+.introduction .prd_slide .prd-thumbs .swiper-button-prev { left: 0; background-image: url(../images/icon/ico_cal_prev.png); }
 
 .introduction .prd_info { float: left; width: 570px; }
 
