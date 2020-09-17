@@ -227,7 +227,7 @@ hr { height: 10px; margin: 0; border: none; background-color: #f2f4f6; }
 
 .frm_group label { position: relative; padding-left: 10px; font-size: 13px; color: #000; }
 
-.frm_group select { padding: 9px 15px 10px 10px; border: 1px solid #000; background-position: right 10px center; }
+.frm_group select { line-height: 19px; padding: 9px 15px 10px 10px; border: 1px solid #000; background-position: right 10px center; }
 
 .frm_group .mix { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
@@ -647,7 +647,7 @@ input.datepicker, input.calendar { background-image: url(../images/icon/ico_cale
 
 .ui-datepicker .ui-datepicker-header { position: relative; padding: 2px 0; }
 
-.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { position: absolute; top: 8px; width: 28px; height: 28px; z-index: 10; background-position: center center; background-repeat: no-repeat; }
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { position: absolute; top: 10px; width: 28px; height: 28px; z-index: 10; background-position: center center; background-repeat: no-repeat; }
 
 .ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover { top: 1px; }
 
@@ -665,9 +665,11 @@ input.datepicker, input.calendar { background-image: url(../images/icon/ico_cale
 
 .ui-datepicker .ui-datepicker-title span { font-size: 14px; }
 
-.ui-datepicker .ui-datepicker-title select { font-size: 10px; margin: 1px 0; }
+.ui-datepicker .ui-datepicker-title select { font-size: 15px; margin: 0; padding: 6px 10px; border: 1px solid #ddd; background-position: right 10px center; }
 
-.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year { width: 45%; }
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year { width: 80px; text-align: center; }
+
+.ui-datepicker select.ui-datepicker-month { width: 60px; margin-left: 10px; }
 
 .ui-datepicker table { width: 100%; font-size: 10px; border-collapse: collapse; margin: 0 0 4px; }
 
@@ -1196,7 +1198,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .header.subhead .btn_cart { position: relative; display: inline-block; width: 2.5rem; height: 1.8rem; background-image: url(../images/common/btn_cart.png); background-size: auto 1.8rem; background-repeat: no-repeat; background-position: 0 0; }
 
-.header.subhead .btn_cart .cnt { display: inline-block; position: absolute; right: -6px; top: -8px; min-width: 18px; padding: 0 3px; background-color: #0053a7; font-size: .4rem; font-weight: 700; color: #fff; text-align: center; border-radius: 100%; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; }
+.header.subhead .btn_cart .cnt { display: inline-block; position: absolute; right: -6px; top: -12px; width: 18px; height: 18px; line-height: 18px; padding: 0 3px; background-color: #0053a7; font-size: 8px; font-weight: 500; color: #fff; text-align: center; border-radius: 100%; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; }
 
 .header.fixed { position: fixed; top: 0; left: 0; right: 0; z-index: 9; height: 50px; -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1); box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1); }
 
@@ -1920,6 +1922,8 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .partner .feedback .frm_group { margin-bottom: 20px; }
 
+.partner .feedback .sel_wrap .sel p { background-color: #c0cfde; }
+
 .partner .reason .frm_group { margin-bottom: 30px; }
 
 .partner .reason .frm_group + .frm_group { padding-top: 30px; border-top: 1px solid #eee; }
@@ -1932,7 +1936,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .partner .total .price .unit { position: relative; right: inherit; top: inherit; display: inline-block; margin-left: 3px; font-weight: 400; }
 
-.partner .sel_wrap { display: -webkit-box; display: -ms-flexbox; display: flex; margin-right: -10px; }
+.partner .sel_wrap { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
 .partner .sel_wrap .sel { position: relative; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; margin-right: 10px; cursor: pointer; }
 
