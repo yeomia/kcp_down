@@ -1,3 +1,5 @@
+.partner_wrap .feedback .feed_tab:after { content: ""; display: block; clear: both; }
+
 .main .footer .social { display: block; }
 
 .main .keyvisual .figure { padding-top: 82%; background-size: cover; background-position: center 0; background-repeat: no-repeat; }
@@ -110,7 +112,7 @@
 
 .main .mailling_sec .frm { margin-top: 3rem; }
 
-.main .mailling_sec .frm input[type=text] { width: calc((100% / 2) - 13px); }
+.main .mailling_sec .frm input[type=text] { width: calc((100% / 2) - 14px); }
 
 .main .mailling_sec .frm span { display: inline-block; width: 20px; vertical-align: middle; }
 
@@ -259,8 +261,6 @@
 .partner_wrap .feedback .feed_tab .tabs.active { border-bottom: 2px solid #0053a7; }
 
 .partner_wrap .feedback .feed_tab .tabs.active a { font-weight: 450; color: #0053a7; }
-
-.partner_wrap .feedback .feed_tab:after { content: ''; display: block; clear: both; }
 
 .partner_wrap .feedback .row { padding-left: 30px; padding-right: 30px; }
 
