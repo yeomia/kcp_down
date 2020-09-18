@@ -402,7 +402,7 @@ h1.logo { display: block; width: 81px; height: 30px; margin: 0 auto; background-
 
 .footer .addr > p span:first-child:before { display: none; }
 
-.footer .copyr { padding: 20px 55px 70px; border-top: 1px solid #4b4b4b; }
+.footer .copyr { padding: 20px 55px 80px; border-top: 1px solid #4b4b4b; }
 
 .footer .copyr p { font-size: 12px; line-height: 24px; color: #eee; }
 
@@ -1180,7 +1180,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .header.subhead .head h2 { display: inline-block; font-size: 15px; }
 
-.header.subhead._view { background-image: -webkit-gradient(linear, left top, left bottom, from(#008dcf), to(#006fba)); background-image: linear-gradient(to bottom, #008dcf, #006fba); -webkit-transition: 0.2s ease-in; transition: 0.2s ease-in; }
+.header.subhead._view { background-image: -webkit-gradient(linear, left top, left bottom, from(#008dcf), to(#006fba)); background-image: linear-gradient(to bottom, #008dcf, #006fba); -webkit-transition: 0.3s ease-in; transition: 0.3s ease-in; }
 
 .header.subhead._view h2 { color: #fff; }
 
@@ -1490,7 +1490,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .introduction .prd_summary .desc dt { margin-bottom: 10px; }
 
-.introduction .prd_summary .desc dd { font-size: 12px; font-weight: 300; }
+.introduction .prd_summary .desc dd { font-size: 12px; font-weight: 300; word-break: break-all; }
 
 .introduction .prd_summary .desc ul { margin-bottom: 30px; }
 
