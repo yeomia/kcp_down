@@ -227,7 +227,7 @@ hr { height: 10px; margin: 0; border: none; background-color: #f2f4f6; }
 
 .frm_group label { position: relative; padding-left: 10px; font-size: 13px; color: #000; }
 
-.frm_group select { line-height: 19px; padding: 9px 15px 10px 10px; border: 1px solid #000; background-position: right 10px center; }
+.frm_group select { line-height: 38px; padding: 0 25px 0 10px; border: 1px solid #000; background-position: right 10px center; }
 
 .frm_group .mix { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
@@ -362,7 +362,7 @@ h1.logo { display: block; width: 81px; height: 30px; margin: 0 auto; background-
 
 .footer .enquiry a span { line-height: 1.5; font-size: 12px; font-weight: 450; color: #fff; }
 
-.footer .row { position: relative; padding: 42px 55px 20px; }
+.footer .row { position: relative; padding: 42px 30px 20px; }
 
 .footer .row * { color: #eeeeee; }
 
@@ -402,7 +402,7 @@ h1.logo { display: block; width: 81px; height: 30px; margin: 0 auto; background-
 
 .footer .addr > p span:first-child:before { display: none; }
 
-.footer .copyr { padding: 20px 55px 80px; border-top: 1px solid #4b4b4b; }
+.footer .copyr { padding: 20px 30px 80px; border-top: 1px solid #4b4b4b; }
 
 .footer .copyr p { font-size: 12px; line-height: 24px; color: #eee; }
 
@@ -1082,7 +1082,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .borad_wrap.relation_swipe .swiper-container .figure { position: relative; width: 100%; padding-top: 75%; background-image: url(../images/common/default_image.png); background-size: cover; background-position: center 0; background-repeat: no-repeat; overflow: hidden; }
 
-.borad_wrap.relation_swipe .swiper-container .figure img { position: absolute; top: 50%; left: 50%; width: 100%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+.borad_wrap.relation_swipe .swiper-container .figure img { position: absolute; top: 50%; left: 50%; max-width: 120%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 
 .borad_wrap.relation_swipe .swiper-container .info { margin-top: 10px; }
 
@@ -1167,6 +1167,10 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 .addphoto .btn_plus { width: 100%; padding-top: calc(100% - 2px); border: 1px solid #0053a7; background-color: #fff; background-image: url(../images/common/btn_plus.png); background-size: 15px; background-repeat: no-repeat; background-position: center center; }
 
 .help { margin-bottom: 4rem; font-size: 14px; font-weight: 300; }
+
+.tab_cont .content { display: none; }
+
+.tab_cont .content.active { display: block; }
 
 .header { height: 70px; }
 
@@ -1518,11 +1522,11 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .introduction .innov_slide .swiper-container .info .title { font-size: 14px; min-height: 4.6rem; white-space: normal; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; }
 
-.introduction .borad_wrap .innov_slide { padding: 0; }
+.introduction .borad_wrap .innov_slide { padding: 0; border-bottom: 1px solid #eee; }
 
 .introduction .borad_wrap .innov_slide .swiper-container { padding: 0 0 40px 60px; }
 
-.introduction .borad_wrap .board_list { padding-top: 50px; border-top: 1px solid #eee; }
+.introduction .borad_wrap .board_list { padding-top: 50px; }
 
 .layer_body.lineuppopup .layer_cont { padding: 0; }
 
@@ -2110,3 +2114,49 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 .professional .more_view { margin: 30px auto; }
 
 .professional .map_area { position: relative; padding-bottom: 100%; background-color: #eee; }
+
+.brand_info { position: relative; padding: 15px 30px 0; background-image: linear-gradient(to bottom, #006fba, #0053a7 calc(100% - 54px), #fff calc(100% - 54px)); }
+
+.brand_info .logo { height: 22px; margin-bottom: 20px; }
+
+.brand_info .logo img { height: 100%; }
+
+.brand_info figure { margin-top: 15px; text-align: center; }
+
+.brand_info figure img { max-height: 155px; }
+
+.brand_info .item_link { margin-top: 30px; }
+
+.brand_info.kleenex { background-image: linear-gradient(to bottom, #006fba, #0053a7 calc(100% - 66px), #fff calc(100% - 66px)); }
+
+.brand_info.kleenguard { background-image: linear-gradient(to bottom, #006fba, #0053a7 calc(100% - 48px), #fff calc(100% - 48px)); }
+
+.brand_info.wypall { background-image: linear-gradient(to bottom, #006fba, #0053a7 calc(100% - 42px), #fff calc(100% - 42px)); }
+
+.brand_info.scott .logo { height: 27px; }
+
+.brand_info.sub { border-bottom: 3.25rem solid #fff; background-image: -webkit-gradient(linear, left top, left bottom, from(#006fba), to(#0053a7)); background-image: linear-gradient(to bottom, #006fba, #0053a7); }
+
+.brand_info.sub figure { position: absolute; right: 0; bottom: -3.25rem; width: 115px; }
+
+.brand_info.sub .desc { padding: 5px 0 10px; }
+
+.brand_info.sub .item_link { margin-top: 20px; }
+
+.brand .desc { font-size: 12px; font-weight: 300; color: #fff; }
+
+.brand .item_link { padding-bottom: 15px; font-size: 0; }
+
+.brand .item_link li { display: inline-block; margin: 0 .75rem .75rem 0; }
+
+.brand .item_link li:last-of-type { margin-bottom: 0; }
+
+.brand .item_link a { display: block; padding: 0 9px; font-size: 13px; font-weight: 500; line-height: 25px; color: #fff; background-color: #0c479b; }
+
+.brand .item_link a:after { content: ''; display: inline-block; width: 6px; height: 9px; margin: -4px 0 0 5px; vertical-align: middle; background-image: url(../images/icon/ico_arr-wh.png); background-position: 0 0; background-size: cover; }
+
+.brand .tab_navi { margin-bottom: 20px; padding: 0 20px; }
+
+.brand .tab_navi li { width: auto; }
+
+.brand .tab_navi li a { color: #999; }
