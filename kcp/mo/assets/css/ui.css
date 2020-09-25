@@ -2155,7 +2155,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .brand .item_link a:after { content: ''; display: inline-block; width: 6px; height: 9px; margin: -4px 0 0 5px; vertical-align: middle; background-image: url(../images/icon/ico_arr-wh.png); background-position: 0 0; background-size: cover; }
 
-.brand .tab_navi { padding: 0 20px 18px; background-color: #fff; -webkit-transition: 0.1s ease; transition: 0.1s ease; }
+.brand .tab_navi { padding: 0 20px 18px; border-bottom: 0; background-color: #fff; -webkit-transition: 0.1s ease; transition: 0.1s ease; }
 
 .brand .tab_navi li { width: auto; }
 
@@ -2163,4 +2163,12 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .brand .tab_navi.fixed { position: fixed; left: 0; right: 0; top: 50px; width: 100%; z-index: 1; padding-bottom: 0; }
 
-.brand .tab_cont { position: relative; margin-top: -18px; }
+.brand .tab_cont { position: relative; border-top: 1px solid #eee; margin-top: -18px; }
+
+.layer_body.vodpop .layer_close { background-image: url(../images/common/btn_wdel.png); }
+
+.layer_body.vodpop .layer_wrap { width: calc(100% - 20px); max-width: 500px; height: 315px; background-color: transparent; }
+
+.layer_body.vodpop .layer_cont { padding: 0; padding-top: 30px; }
+
+.layer_body.vodpop iframe { width: 100%; height: 100%; }
