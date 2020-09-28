@@ -1,5 +1,7 @@
 .partner_wrap .feedback .feed_tab:after { content: ""; display: block; clear: both; }
 
+.main .wrap { margin-top: 0; padding-top: 0; }
+
 .main .footer .social { display: block; }
 
 .main .keyvisual .figure { padding-top: 82%; background-size: cover; background-position: center 0; background-repeat: no-repeat; }
@@ -78,9 +80,11 @@
 
 .main .recommand_sec .tags .tag { display: inline-block; min-width: 50px; padding: 0.5rem 1.0rem 0.6rem; margin-bottom: 5px; border: 1px solid #c2c2c2; border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -ms-border-radius: 20px; -o-border-radius: 20px; font-size: 12px; font-weight: 300; color: #888888; }
 
-.main .recommand_sec .logo { opacity: 0; height: 20px; background-repeat: no-repeat; background-position: center 0; background-size: auto 20px; }
+.main .recommand_sec .logo { opacity: 0; min-height: 20px; background-repeat: no-repeat; background-position: center 0; background-size: auto 20px; }
 
-.main .recommand_sec .logo.logo_kleenex { background-image: url(../images/common/logo_kleenex.png); }
+.main .recommand_sec .logo img { max-height: 21px; }
+
+.main .recommand_sec .logo.logo_scott img { max-height: 58px; }
 
 .main .recommand_sec .swiper-slide-active .figure img { bottom: 0; }
 
