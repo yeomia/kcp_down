@@ -1,4 +1,4 @@
-.partner_wrap .feedback .feed_tab:after { content: ""; display: block; clear: both; }
+.partner_wrap .feedback .feed_tab:after, .layer_body.notiview .layer_head .etc:after { content: ""; display: block; clear: both; }
 
 .main .wrap { margin-top: 0; padding-top: 0; }
 
@@ -234,6 +234,8 @@
 
 .partner_wrap .noti_board .board_wrap li .etc p.date { color: #999999; }
 
+.partner_wrap .noti_board .board_wrap li .etc p.util .ico_download { display: inline-block; width: 11px; height: 10px; background-image: url(../images/icon/icon_download.png); background-size: 11px; background-repeat: no-repeat; background-position: 0 0; vertical-align: middle; }
+
 .partner_wrap .succ_case { position: relative; margin-top: 50px; padding-top: 40px; }
 
 .partner_wrap .succ_case:before { content: ''; display: block; position: absolute; left: 0; top: 0; width: calc(100% - 60px); height: 0; padding-top: 60%; background-image: url(../images/common/pt_topbg.png); background-size: cover; background-repeat: no-repeat; background-position: 0 0; }
@@ -313,3 +315,39 @@
 .partner_status .qty_list .title { font-size: 11px; color: #666666; }
 
 .partner_status .qty_list .qty { font-size: 22px; font-weight: 700; }
+
+.layer_body.notiview .layer_head { padding-bottom: 15px; }
+
+.layer_body.notiview .layer_head .layer_title { height: inherit; padding-bottom: 5px; font-size: 14px; background-color: #fff; }
+
+.layer_body.notiview .layer_head .etc { padding: 0 23px; }
+
+.layer_body.notiview .layer_head .etc p { float: left; padding-left: 5px; font-size: 12px; font-weight: 300; }
+
+.layer_body.notiview .layer_head .etc p:before { content: ''; display: inline-block; margin-right: 8px; margin-top: -3px; width: 1px; height: 7px; background-color: #eeeeee; vertical-align: middle; }
+
+.layer_body.notiview .layer_head .etc p:first-child:before { display: none; padding-left: 0; }
+
+.layer_body.notiview .layer_head .etc .type { color: #00a8e2; }
+
+.layer_body.notiview .layer_head .etc .date { color: #999999; }
+
+.layer_body.notiview .layer_wrap { background-color: #f2f4f6; }
+
+.layer_body.notiview .layer_cont { height: auto; padding-bottom: 60px; }
+
+.layer_body.notiview .attach { margin-top: 5px; margin-bottom: 15px; text-align: right; }
+
+.layer_body.notiview .attach a { display: inline-block; color: #000; font-size: 12px; font-weight: 500; }
+
+.layer_body.notiview .attach [class^="ico"] { display: inline-block; width: 1.35rem; height: 1.35rem; margin: -4px 5px 0; background-size: 100% auto; background-position: 50% 50%; background-repeat: no-repeat; vertical-align: middle; }
+
+.layer_body.notiview .attach .ico_pdf { background-image: url(../images/icon/ico_pdf.png); }
+
+.layer_body.notiview .attach .ico_jpg { background-image: url(../images/icon/ico_jpg.png); }
+
+.layer_body.notiview .attach .ico_gif { background-image: url(../images/icon/ico_gif.png); }
+
+.layer_body.notiview .conts { color: #666666; }
+
+.layer_body.notiview .conts p { margin-bottom: 10px; color: #666666; }

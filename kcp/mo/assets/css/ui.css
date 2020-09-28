@@ -553,7 +553,7 @@ h1.logo { display: block; width: 81px; height: 30px; margin: 0 auto; background-
 
 .layer_body.layer_full .layer_wrap { width: 100%; height: 100%; }
 
-.layer_body.layer_full .layer_head .layer_title { height: 70px; padding: 23px 30px; text-align: left; }
+.layer_body.layer_full .layer_head .layer_title { height: 70px; padding: 23px 60px 23px 30px; text-align: left; }
 
 .layer_body.layer_full .layer_cont { height: calc(100% - 70px); padding: 20px 30px; }
 
@@ -2009,7 +2009,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .custom .accord_wrap .attach { margin-bottom: 10px; text-align: right; }
 
-.custom .accord_wrap .attach a { color: #000; font-size: 12px; font-weight: 500; }
+.custom .accord_wrap .attach a { display: inline-block; color: #000; font-size: 12px; font-weight: 500; }
 
 .custom .accord_wrap .attach [class^="ico"] { display: inline-block; width: 1.35rem; height: 1.35rem; margin: -4px 5px 0; background-size: 100% auto; background-position: 50% 50%; background-repeat: no-repeat; vertical-align: middle; }
 
