@@ -201,7 +201,7 @@ hr { height: 10px; margin: 0; border: none; background-color: #f2f4f6; }
 
 .frm_group label { display: block; color: #666; }
 
-.frm_group select { padding: 0 15px 0 10px; border: 1px solid #000; background-position: right 10px center; }
+.frm_group select { min-height: 40px; padding: 0 15px 0 10px; border: 1px solid #000; background-position: right 10px center; }
 
 .frm_group .mix { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
@@ -297,6 +297,12 @@ html, body { min-width: 1280px; margin: 0 auto; height: 100%; min-height: 100%; 
 .wrap { min-height: 100%; padding-top: 100px; }
 
 .container { max-width: 1280px; margin: 30px auto 0; padding-left: 40px; padding-right: 40px; }
+
+.container.full { max-width: 100%; padding-left: 0px; padding-right: 0px; }
+
+.container.full .breadcrumb, .container.full .idx-page_head, .container.full .page_head { padding-left: 40px; padding-right: 40px; }
+
+.container.full .row { max-width: 1280px; margin: 0 auto; padding-left: 40px; padding-right: 40px; }
 
 h1.logo { display: block; width: 115px; height: 45px; background-image: url(../images/common/logo.png); background-size: 110px; background-repeat: no-repeat; background-position: 0 0; -webkit-transition: 0.2s ease-in; transition: 0.2s ease-in; }
 
@@ -1275,7 +1281,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 .slide_navi .swiper-button-prev { background-image: url(../images/common/swipe_prev.png); }
 
 /** container **/
-.container .breadcrumb { margin-bottom: 50px; }
+.container .breadcrumb { max-width: 1280px; margin: 0 auto 50px; }
 
 .container .breadcrumb a { position: relative; display: inline-block; margin-right: 15px; font-size: 14px; vertical-align: middle; color: #666666; }
 
@@ -1415,7 +1421,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .slide-bg { position: absolute; top: 654px; left: 0; right: 0; z-index: -1; background-color: #eeeeee; height: 227px; width: 100%; }
 
-.idx-page_head { position: relative; margin-bottom: 93px; }
+.idx-page_head { position: relative; max-width: 1280px; margin: 0 auto 93px; }
 
 .idx-page_head h2 { display: inline-block; font-size: 40px; line-height: 1; font-weight: 500; vertical-align: middle; margin-bottom: 30px; }
 
@@ -1696,6 +1702,76 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 .custom .frm_group + .frm_group { margin-top: 15px; }
 
 .custom .btn_wrap.user { margin-left: 355px; margin-right: 355px; }
+
+.professional .idx-page_head { position: static; margin-bottom: 50px; }
+
+.professional .idx-page_head h2 { margin-bottom: 0px; }
+
+.professional .bnr_figure { width: 100%; margin-bottom: 105px; }
+
+.professional .bnr_figure img { width: 100%; }
+
+.professional .about { padding-bottom: 160px; }
+
+.professional .about p { margin-top: 30px; font-size: 16px; line-height: 30px; font-weight: 300; }
+
+.professional .about p.tit { font-size: 54px; line-height: 75px; font-weight: 300; }
+
+.professional .about p.tit em { font-size: inherit; line-height: inherit; font-weight: 500; }
+
+.professional .about p.desc { width: 710px; font-size: 22px; line-height: 38px; }
+
+.professional .about .figs { position: relative; max-width: 100%; margin-top: 92px; margin-bottom: 96px; }
+
+.professional .about .figs .img1 { margin-left: 80px; }
+
+.professional .about .figs .img2 { position: absolute; top: -130px; right: 0; }
+
+.professional .logo { position: relative; max-width: 100%; padding: 90px 0 100px; margin-bottom: -150px; background-color: #eeeeee; }
+
+.professional .logo .idx-page_head { line-height: 1; margin-bottom: 150px; }
+
+.professional .logo .content { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; padding: 0 20px; }
+
+.professional .logo .content dl:first-of-type { -webkit-box-flex: 1.38; -ms-flex: 1.38; flex: 1.38; }
+
+.professional .logo .content dl:last-of-type { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
+
+.professional .logo .content dt { font-size: 24px; font-weight: 400; padding-bottom: 38px; }
+
+.professional .logo .content dd { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.professional .logo .content dd.ko { padding: 0 10px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.professional .logo .content dd.ko .img { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; padding-top: 22px; }
+
+.professional .logo .content dd.store { -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.professional .logo .content dd.store p { font-size: 16px; line-height: 24px; font-weight: 400; color: #999; position: relative; }
+
+.professional .logo .content dd.store p:before { content: '*'; position: absolute; top: 0; right: 100%; }
+
+.professional .sort_store { padding: 30px 0 0; margin-bottom: 60px; text-align: center; }
+
+.professional .sort_store select { display: inline-block; min-width: 120px; width: auto; min-height: 40px; padding-right: 20px; margin-right: 5px; }
+
+.professional .sort_store select:last-child { min-width: 220px; }
+
+.professional .sort_store .inpwrap { display: inline-block; }
+
+.professional .sort_store .btn_wrap { display: inline-block; margin-bottom: 0; }
+
+.professional .map_area { position: relative; width: 100%; height: 450px; margin-bottom: 60px; text-align: center; }
+
+.professional .map_area .mapapi { position: absolute; left: 50%; width: 100%; height: 450px; text-align: center; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+
+.professional .tbl_list.partner_list th { position: relative; font-size: 18px; font-weight: 500; }
+
+.professional .tbl_list.partner_list th:before { content: ''; height: 20px; background-color: #b0b0b0; }
+
+.professional .tbl_list.partner_list th:first-child:before { display: none; }
+
+.professional .tbl_list.partner_list .items { color: #0053a7; }
 
 .header:after, .headgnb .menu:after, .subgnb .submenu:after, .footer .row:after, .footer .util:after, .cust_inquiry:after, .cust_inquiry .frm_group:after, .search_wrap .recom_keyword > div:after, [class*='_col']:after, .order_list.type2 .info:after, .addphoto:after, .container:after, .container .conts:after, .searchcnts .nodata_recom .product_tree:after, .slide_page:after, .item_link:after, .introduction .details:after, .introduction .prd_info .code:after, .introduction .prd_spec:after, .custom .frm_group:after { content: ""; display: block; clear: both; }
 
