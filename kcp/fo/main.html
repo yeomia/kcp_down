@@ -42,6 +42,50 @@
 				</div> //-->
 			</div>
 		</div>
+		<!-- 20201005 추가 -->
+		<div id="recombnrswipe" class="swiper-container reomm_bnr">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide slide01">
+					<p class="figure"><span class="a11y">크리넥스 센터풀 화장지</span></p>
+					<div class="info">
+						<a href="#">
+							<p>낭비없이 뽑아쓰는<br>국민절약 화장지</p>
+							<p class="btn_more">크리넥스 센터풀 <i></i></p>
+						</a>
+					</div>
+				</div>
+				<div class="swiper-slide slide02">
+					<p class="figure"><span class="a11y">크리넥스 에어셀 점보롤</span></p>
+					<div class="info">
+						<a href="#">
+							<p>막힘없이 풀리는<br>국민안심 화장지</p>
+							<p class="btn_more">크리넥스 에어셀 점보롤 <i></i></p>
+						</a>
+					</div>
+				</div>
+				<div class="swiper-slide slide03">
+					<p class="figure"><span class="a11y">크리넥스 드라이셀</span></p>
+					<div class="info">
+						<a href="#">
+							<p>건강을 지키는<br>위생습관</p>
+							<p class="btn_more">크리넥스 드라이셀 <i></i></p>
+						</a>
+					</div>
+				</div>
+				<div class="swiper-slide slide04">
+					<p class="figure"><span class="a11y">와이프올 에어포켓</span></p>
+					<div class="info">
+						<a href="#">
+							<p>와이퍼의<br>새로운 기준</p>
+							<p class="btn_more">와이프올 에어포켓 <i></i></p>
+						</a>
+					</div>
+				</div>
+			</div>
+				<div class="swiper-pagination"></div>
+		</div>
+		<!--// 20201005 추가 -->
+
 		<div class="subgnb">
 			<ul class="submenu" data-sub="1">
 				<li><a href="#">사업부소개</a></li>
@@ -261,7 +305,7 @@
 	</section>
 
 	<section class="section innov_sec">
-		<h3>현장 혁신정보</h3>
+		<h3>현장 인사이트</h3>
 		<div id="innovswipe" class="swiper-container">
 			<div class="swiper-wrapper">
 				<!-- slide -->
@@ -298,6 +342,46 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- 20201005 추가 -->
+	<section class="section insight_sec">
+		<h3>추천 브랜드</h3>
+		<div class="row">
+			<div class="item">
+				<a href="#">
+					<p class="logo"><img src="./assets/images/common/log_kleenex-s01.png" alt="크리넥스 센터풀 화장지"></p>
+					<p class="txt">낭비없이 뽑아쓰는<br>국민절약 화장지</p>
+					<p class="btn_more">보러가기 <i></i></p>
+					<p class="figure"><img src="./assets/images/common/recomm_brand01.png" alt=""></p>
+				</a>
+			</div>
+			<div class="item">
+				<a href="#">
+					<p class="logo"><img src="./assets/images/common/log_kleenex-s02.png" alt="크리넥스 에어셀 점보롤"></p>
+					<p class="txt">막힘없이 풀리는<br>국민안심 화장지</p>
+					<p class="btn_more">보러가기 <i></i></p>
+					<p class="figure"><img src="./assets/images/common/recomm_brand02.png" alt=""></p>
+				</a>
+			</div>
+			<div class="item">
+				<a href="#">
+					<p class="logo"><img src="./assets/images/common/log_kleenex-s03.png" alt="크리넥스 드라이셀"></p>
+					<p class="txt">건강을 지키는<br>위생습관</p>
+					<p class="btn_more">보러가기 <i></i></p>
+					<p class="figure"><img src="./assets/images/common/recomm_brand03.png" alt=""></p>
+				</a>
+			</div>
+			<div class="item">
+				<a href="#">
+					<p class="logo"><img src="./assets/images/common/log_kleenex-s04.png" alt="와이프올 에어포켓"></p>
+					<p class="txt">와이퍼의<br>새로운 기준</p>
+					<p class="btn_more">보러가기 <i></i></p>
+					<p class="figure"><img src="./assets/images/common/recomm_brand04.png" alt=""></p>
+				</a>
+			</div>
+		</div>
+	</section>
+	<!--// 20201005 추가 -->
 
 	<section class="section brand_sec">
 		<h3 class="a11y">브랜드 소개</h3>
@@ -441,17 +525,13 @@
 		</dl>
 		<dl class="frm_group">
 			<dt><label for="frm5">휴대폰번호 <span class="required"><span class="a11y">필수</span></span></label></dt>
-			<dd class="mix phone">
-				<select>
-					<option value="">선택</option>
-					<option value="">010</option>
-				</select>
-				<input type="text" id="frm5" value="" required>
+			<dd>
+				<input type="text" id="frm5" value="" placeholder="-를 제외한 숫자만 입력해주세요." required>
 			</dd>
 		</dl>
 		<dl class="frm_group">
 			<dt><label for="frm6">업종 <span class="required"><span class="a11y">필수</span></span></label></dt>
-			<dd class="mix phone">
+			<dd class="mix">
 				<select>
 					<option value="">선택</option>
 					<option value="">업종</option>
@@ -500,7 +580,7 @@
 			<div class="weather"> <!-- 날씨 디자인 미정 //-->
 				<p>미세먼지 <span>보통</span><img src="./assets/images/dummy/@weather.png" alt="미세먼지 보통" /></p>
 			</div>
-			<a href="#" class="btn_search"><span class="a11y">검색</span></a>
+			<button onclick="searchcomPop();" class="btn_search"><span class="a11y">검색</span></button>
 		</div>
 		<dl class="cust_call">
 			<dt>상담전화</dt>
@@ -514,9 +594,41 @@
 </div>
 <!--// 구매문의 -->
 
+<!-- 검색영역 -->
+<div class="search_wrap">
+	<button onclick="searchPopclose();" class="btn_close"><span class="a11y">close</span></button>
+	<div class="row">
+		<p class="title">Search</p>
+		<div class="frm">
+			<input type="text" placeholder="제품명을 입력해주세요">
+			<a href="#" onclick="searchPopclose();" class="btn_search"><i></i><span class="a11y">검색</span></a>
+		</div>
+		<div class="recom_keyword">
+			<p>추천검색어</p>
+			<div>
+				<ul class="item">
+					<li><a href="#"><em>1</em> 크리넥스 드라이셀 R170크리넥스 드라이셀 R170크리넥스 드라이셀 R170</a></li>
+					<li><a href="#"><em>2</em> 스카트 스카트폴드 타올</a></li>
+					<li><a href="#"><em>3</em> 크리넥스 미용티슈</a></li>
+					<li><a href="#"><em>4</em> 크린가드 M10</a></li>
+					<li><a href="#"><em>5</em> 와이프올 다목적 흡착제</a></li>
+				</ul>
+				<ul class="item">
+					<li><a href="#"><em>6</em> 스카트 스카트폴드 타올</a></li>
+					<li><a href="#"><em>7</em> 크리넥스 미용티슈</a></li>
+					<li><a href="#"><em>8</em> 크린가드 M10</a></li>
+					<li><a href="#"><em>9</em> 와이프올 다목적 흡착제</a></li>
+					<li><a href="#"><em>10</em> 크리넥스 드라이셀 R170</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!--// 검색영역 -->
+
 <!-- 공통 : 구매문의/검색 플로팅 버튼  -->
 <div class="skybanner">
-	<a href="#" class="btn_search"><i></i><span class="a11y">검색</span></a>
+	<a href="#" onclick="searchcomPop();return false;" class="btn_search"><i></i><span class="a11y">검색</span></a>
 	<a href="#" onclick="inquiryDoor();return false;" class="btn_inquiry"><span>구매문의</span></a>
 </div>
 <!--// 공통 : 구매문의/검색 플로팅 버튼  -->

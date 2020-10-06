@@ -444,7 +444,7 @@ h1.logo { display: block; width: 81px; height: 30px; margin: 0 auto; background-
 
 .gnb_menu .gnb_wrap { height: 100%; }
 
-.gnb_menu .gnb_wrap .tablist { float: left; display: block; table-layout: inherit; width: 140px; height: 100%; background-color: #f2f4f6; border-right: 1px solid #e0e0e0; }
+.gnb_menu .gnb_wrap .tablist { float: left; display: block; table-layout: inherit; width: 160px; padding-bottom: 30px; background-color: #f2f4f6; border-right: 1px solid #e0e0e0; }
 
 .gnb_menu .gnb_wrap .tablist li { display: block; text-align: left; padding: 0; background-color: #f2f4f6; border-bottom: 0; }
 
@@ -452,7 +452,9 @@ h1.logo { display: block; width: 81px; height: 30px; margin: 0 auto; background-
 
 .gnb_menu .gnb_wrap .tablist li a.current, .gnb_menu .gnb_wrap .tablist li button.current { background-color: #fff; color: #0053a7; font-weight: 450; }
 
-.gnb_menu .gnb_wrap .submenu { clear: inherit; float: right; width: calc(100% - 140px); overflow: hidden; overflow-y: auto; }
+.gnb_menu .gnb_wrap .tablist li.comm { width: 160px; padding: 30px 0 30px; border-right: 1px solid #e0e0e0; }
+
+.gnb_menu .gnb_wrap .submenu { clear: inherit; float: right; width: calc(100% - 160px); overflow: hidden; overflow-y: auto; }
 
 .gnb_menu .gnb_wrap .submenu .item { padding: 16px 20px 14px; border-bottom: 1px solid #e0e0e0; }
 
@@ -465,6 +467,22 @@ h1.logo { display: block; width: 81px; height: 30px; margin: 0 auto; background-
 .gnb_menu .gnb_wrap .submenu .acco_panel > ul li { padding: 10px 0; color: #666666; }
 
 .gnb_menu .gnb_wrap .submenu .acco_panel > ul li a { color: #666666; }
+
+.gnb_menu .reomm_bnr.swiper-container .swiper-slide { padding-left: 20px; padding-right: 20px; }
+
+.gnb_menu .reomm_bnr.swiper-container .figure { position: relative; width: 100%; height: 70px; text-align: center; }
+
+.gnb_menu .reomm_bnr.swiper-container .figure img { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); max-height: 96%; }
+
+.gnb_menu .reomm_bnr.swiper-container .info a { display: inline-block; padding: 5px 0; text-align: center; }
+
+.gnb_menu .reomm_bnr.swiper-container .info .btn_more { margin-top: 0; font-size: 12px; letter-spacing: -1px; }
+
+.gnb_menu .reomm_bnr.swiper-container .swiper-pagination-bullets { position: relative; bottom: 0; }
+
+.gnb_menu .reomm_bnr.swiper-container .swiper-pagination-bullets .swiper-pagination-bullet { background: #ccc; opacity: 1; }
+
+.gnb_menu .reomm_bnr.swiper-container .swiper-pagination-bullets .swiper-pagination-bullet-active { background: #777; }
 
 .fixed_menu { position: fixed; bottom: 0; left: 0; right: 0; width: 100%; height: 51px; height: calc(constant(safe-area-inset-bottom) + 51px); height: calc(env(safe-area-inset-bottom) + 51px); border-top: 1px solid #e5e5e5; background-color: #fff; z-index: 11; -webkit-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out; }
 

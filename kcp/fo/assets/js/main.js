@@ -123,6 +123,16 @@ if($('#brandswipe').length > 0){ // 브랜드 소개
 	})
 }
 
+if($('.insight_sec').length > 0){ // 추천브랜드
+	$('.insight_sec').find('.item').each(function(i){
+		$(this).hover(function(){
+			$(this).find('.logo img').attr("src", $(this).find('.logo img').attr("src").replace(".png", "_over.png"));
+		}, function(){
+			$(this).find('.logo img').attr("src", $(this).find('.logo img').attr("src").replace("_over.png", ".png"));
+		});
+	});
+}
+
 
 
 

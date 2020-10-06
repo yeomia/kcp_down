@@ -196,6 +196,7 @@ $('.headgnb .menu:not(".submenu")').find('>li').each(function(i, e) {
 		$(this).siblings().removeClass('active');
 		$(this).addClass('active');
 		$('.subgnb').addClass('show');
+		$('.reomm_bnr').addClass('show');
 
 		var gnbNum = $(this).index() + 1;
 		$('.submenu').removeClass('show');
@@ -211,11 +212,13 @@ $('.headgnb .menu:not(".submenu")').find('>li').each(function(i, e) {
 		$(this).removeClass('active');
 		$('.headgnb .menu li').removeClass('active');
 		$('.subgnb').removeClass('show');
+		$('.reomm_bnr').removeClass('show');
 	});
 	$('.headgnb .etc').mouseover(function(){
 		$(this).removeClass('active');
 		$('.headgnb .menu li').removeClass('active');
 		$('.subgnb').removeClass('show');
+		$('.reomm_bnr').removeClass('show');
 	});
 
 });
@@ -270,5 +273,28 @@ var videoControl = function(){
 				}
 			});
 		}
+	});
+}
+
+if($('#recombnrswipe').length > 0){ // gnb 추천브랜드
+	var headerBnrswipe = new Swiper('#recombnrswipe', {
+		loop:true,
+		slidesPerView: 1,
+		observer: true,
+		observeParents: true,
+		centeredSlides: true,
+		spaceBetween: 0,
+		pagination: {
+			el: '.swiper-pagination',
+		},
+		autoplay: {
+			delay: 1500,
+			disableOnInteraction: true,
+		},
+	});
+	$(".reomm_bnr.swiper-container").hover(function() {
+    headerBnrswipe.autoplay.stop();
+	}, function() {
+		headerBnrswipe.autoplay.start();
 	});
 }
