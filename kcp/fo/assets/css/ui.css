@@ -1811,51 +1811,83 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .professional .tbl_list.partner_list .items { color: #0053a7; }
 
-.brand_info { position: relative; padding: 15px 30px 0; }
+.brand .breadcrumb { margin: -18px auto 12px; }
 
-.brand_info .logo { height: 22px; margin-bottom: 20px; }
+.brand_info { padding: 90px 30px 115px; position: relative; }
 
-.brand_info .logo img { height: 100%; }
+.brand_info .logo { height: 45px; margin-bottom: 20px; }
 
-.brand_info figure { margin-top: 15px; text-align: center; }
+.brand_info .desc { font-size: 20px; line-height: 30px; font-weight: 350; color: #fff; }
 
-.brand_info figure img { max-height: 155px; }
+.brand_info .item_link { margin-top: 30px; padding-bottom: 15px; }
 
-.brand_info .item_link { margin-top: 30px; }
+.brand_info .item_link li { display: inline-block; margin: 0 .75rem .75rem 0; }
 
-.brand_info.kleenex { background-image: linear-gradient(to bottom, #006fba, #0053a7 calc(100% - 66px), #fff calc(100% - 66px)); }
+.brand_info .item_link li:last-of-type { margin-bottom: 0; }
 
-.brand_info.kleenguard { background-image: linear-gradient(to bottom, #006fba, #0053a7 calc(100% - 48px), #fff calc(100% - 48px)); }
+.brand_info .item_link a { display: block; padding: 7px 27px; font-size: 16px; font-weight: 500; line-height: 25px; color: #fff; background-color: #0c479b; border-color: transparent; }
 
-.brand_info.wypall { background-image: linear-gradient(to bottom, #006fba, #0053a7 calc(100% - 42px), #fff calc(100% - 42px)); }
+.brand_info .item_link a:after { content: ''; display: inline-block; width: 9px; height: 16px; margin: -4px 0 0 18px; vertical-align: middle; background-image: url(../images/icon/ico_arr-wh.png); background-position: 0 0; background-size: cover; }
 
-.brand_info.scott .logo { height: 27px; }
+.brand_info figure { text-align: right; max-width: 100%; }
 
-.brand .desc { font-size: 12px; font-weight: 300; color: #fff; }
+.brand_info figure img { position: absolute; }
 
-.brand .item_link { padding-bottom: 15px; font-size: 0; }
+.brand .bnr_bg { overflow: hidden; width: 100%; background-image: linear-gradient(to bottom, #4daadf, #2357a2 calc(100% - 54px)); }
 
-.brand .item_link li { display: inline-block; margin: 0 .75rem .75rem 0; }
+.brand .bnr_bg.kleenex { height: 456px; }
 
-.brand .item_link li:last-of-type { margin-bottom: 0; }
+.brand .bnr_bg.kleenex .bnr_cont { width: 820px; }
 
-.brand .item_link a { display: block; padding: 0 9px; font-size: 13px; font-weight: 500; line-height: 25px; color: #fff; background-color: #0c479b; }
+.brand .bnr_bg.kleenex figure img { right: -6%; top: 12%; -webkit-transform: scale(0.85); transform: scale(0.85); }
 
-.brand .item_link a:after { content: ''; display: inline-block; width: 6px; height: 9px; margin: -4px 0 0 5px; vertical-align: middle; background-image: url(../images/icon/ico_arr-wh.png); background-position: 0 0; background-size: cover; }
+.brand .bnr_bg.scott { height: 438px; }
 
-.brand .bnr_bg { width: 100%; background-image: linear-gradient(to bottom, #006fba, #0053a7 calc(100% - 54px), #fff calc(100% - 54px)); }
+.brand .bnr_bg.scott .bnr_cont { width: 700px; }
 
-.brand .bnr_cont._left { float: left; max-width: 715px; }
+.brand .bnr_bg.scott figure img { right: -4%; top: 14%; -webkit-transform: scale(0.9); transform: scale(0.9); }
 
-.brand .tab_navi { padding: 0 20px 18px; border-bottom: 0; background-color: #fff; -webkit-transition: 0.1s ease; transition: 0.1s ease; }
+.brand .bnr_bg.poppy { height: 340px; }
 
-.brand .tab_navi li { width: auto; }
+.brand .bnr_bg.poppy .bnr_cont { width: 800px; }
 
-.brand .tab_navi li a { color: #999; }
+.brand .bnr_bg.poppy figure img { right: -12%; top: 3%; -webkit-transform: scale(0.8); transform: scale(0.8); }
 
-.brand .list_sort { float: right; }
+.brand .bnr_bg.kleenguard { height: 370px; }
+
+.brand .bnr_bg.kleenguard .bnr_cont { width: 740px; }
+
+.brand .bnr_bg.kleenguard figure img { right: -7%; top: 3%; -webkit-transform: scale(0.9); transform: scale(0.9); }
+
+.brand .bnr_bg.wypall { height: 450px; }
+
+.brand .bnr_bg.wypall .bnr_cont { width: 800px; }
+
+.brand .bnr_bg.wypall figure img { right: -8%; top: 9%; -webkit-transform: scale(0.95); transform: scale(0.95); }
+
+.brand .bnr_bg.kimtech { height: 370px; }
+
+.brand .bnr_bg.kimtech .bnr_cont { width: 780px; }
+
+.brand .bnr_bg.kimtech figure img { right: 5%; top: 4%; }
+
+.brand .tab_navi { margin-top: -42px; background-color: #fff; -webkit-box-shadow: 0 0 10px 15px rgba(0, 0, 0, 0.05); box-shadow: 0 0 10px 15px rgba(0, 0, 0, 0.05); -webkit-transition: 0.1s ease; transition: 0.1s ease; }
+
+.brand .tab_navi ul { display: -webkit-box; display: -ms-flexbox; display: flex; height: 70px; }
+
+.brand .tab_navi ul li { width: 100%; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; text-align: center; }
+
+.brand .tab_navi ul li a { line-height: 70px; color: #999; }
+
+.brand .tab_navi ul li.active { border-bottom: 5px solid #224c96; }
+
+.brand .tab_navi ul li.active a { color: #224c96; font-weight: 700; }
+
+.brand .list_sort { float: right; margin-top: 50px; }
 
 .brand .list_sort:after { content: ''; display: block; clear: both; }
+
+.brand .product_list { padding: 100px 0; }
 
 .brand .product_list ._col5 { margin-bottom: 50px; border-bottom: 1px solid #e0e0e0; }
 
@@ -1870,6 +1902,26 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 .brand .product_list ._col5 li a { display: block; width: 100%; height: 100%; }
 
 .brand .product_list ._col5:after { content: ''; display: block; clear: both; }
+
+.brand.sub .bnr_bg.kleenex_s01 { height: 207px; }
+
+.brand.sub .bnr_bg.kleenex_s02 { height: 208px; }
+
+.brand.sub .bnr_bg.kleenex_s03 { height: 224px; }
+
+.brand.sub .bnr_bg.wypall_sub { height: 210px; }
+
+.brand.sub .brand_info { padding: 60px 40px 0px; }
+
+.brand.sub .brand_info .desc { margin-bottom: 14px; }
+
+.brand.sub .brand_info .item_link { position: absolute; right: 40px; top: 50%; }
+
+.brand.sub .tab_wrap .tab_navi { margin-top: 0px; -webkit-box-shadow: none; box-shadow: none; border-bottom: 1px solid #e0e0e0; }
+
+.brand.sub .tab_wrap .tab_cont p { max-width: 1200px; }
+
+.brand.sub .tab_wrap .tab_cont p img { width: 100%; }
 
 .layer_body.vodpop .layer_close { background-image: url(../images/common/btn_wdel.png); }
 
@@ -1915,7 +1967,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
   .cust_inquiry.open .etc { width: 0; }
   .cust_inquiry.open .cust_call { display: none; } }
 
-@media screen and (max-width: 1220px) { .cust_inquiry { display: none; } }
+@media screen and (max-width: 1180px) { .cust_inquiry { display: none; } }
 
 @media screen and (max-width: 1025px) { html, body { min-width: 100%; }
   .reomm_bnr.swiper-container { top: 100px; left: 0; width: 190px; height: auto; padding-bottom: 20px; border-right: 0; }

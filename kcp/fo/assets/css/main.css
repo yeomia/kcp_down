@@ -188,6 +188,8 @@
 
 .main .cust_inquiry.open { left: 70px; }
 
+.main .cust_inquiry.open.hidd { left: 70px; }
+
 .main .cust_inquiry.hidd { left: 110%; }
 
 .main .cust_inquiry.hidd .top_util { right: -100%; }
