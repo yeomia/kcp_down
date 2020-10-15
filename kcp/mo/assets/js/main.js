@@ -126,4 +126,3 @@ if($('#brandswipe').length > 0){ // 브랜드 소개
 
 
 
-
