@@ -1555,11 +1555,11 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .introduction .prd_info { float: left; width: 570px; }
 
-.introduction .prd_info .logo { display: inline-block; margin-bottom: 20px; }
+.introduction .prd_info .tit { font-size: 26px; line-height: 1.5; font-weight: 500; margin-bottom: 10px; }
 
-.introduction .prd_info .tit { margin-bottom: 20px; font-size: 26px; line-height: 1.5; }
+.introduction .prd_info .tit.brand { margin-bottom: 11px; line-height: 1; }
 
-.introduction .prd_info .code > li { position: relative; float: left; color: #0053a7; padding-left: 20px; margin-left: 20px; }
+.introduction .prd_info .code > li { position: relative; float: left; color: #0053a7; padding-left: 20px; margin-left: 20px; line-height: 1; font-weight: 500; }
 
 .introduction .prd_info .code > li:before { content: ''; position: absolute; left: 0; top: 50%; margin-top: -6px; display: block; width: 1px; height: 13px; background-color: #e0e0e0; }
 
@@ -1611,7 +1611,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .introduction .prd_desc ul li { padding-left: 10px; font-size: inherit; text-indent: -10px; font-weight: 300; }
 
-.introduction .prd_desc ul li:before { content: '- '; }
+.introduction .prd_desc ul li:before { content: '・ '; }
 
 .introduction .row { margin-top: 120px; }
 
@@ -1877,7 +1877,7 @@ button.swiper-pagination-bullet { border: none; margin: 0; padding: 0; -webkit-b
 
 .brand .bnr_bg.kimtech figure img { right: -4%; top: 4%; }
 
-.brand .tab_navi { margin-top: -42px; background-color: #fff; -webkit-box-shadow: 0 0 10px 15px rgba(0, 0, 0, 0.05); box-shadow: 0 0 10px 15px rgba(0, 0, 0, 0.05); -webkit-transition: 0.1s ease; transition: 0.1s ease; }
+.brand .tab_navi { -webkit-transform: translateY(-42px); transform: translateY(-42px); background-color: #fff; -webkit-box-shadow: 0 0 10px 15px rgba(0, 0, 0, 0.05); box-shadow: 0 0 10px 15px rgba(0, 0, 0, 0.05); -webkit-transition: 0.1s ease; transition: 0.1s ease; }
 
 .brand .tab_navi ul { display: -webkit-box; display: -ms-flexbox; display: flex; height: 70px; }
 
